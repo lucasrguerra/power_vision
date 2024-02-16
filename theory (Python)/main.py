@@ -8,17 +8,16 @@ def to2decimal(value):
 
 voltage_amplitude = 311
 current_amplitude = 70
-frequency = 60
-sample_rate = 2 ** 12
-duration = 0.01667
+frequency = 1
+sample_rate = 2 ** 9
 noise_amplitude = 10
 type = "single"
 #type = "two"
 #type = "three"
 
 if type == "single":
-    voltage_wave = data.pure_sine_wave(voltage_amplitude, frequency, 0, sample_rate, duration)
-    current_wave = data.pure_sine_wave(current_amplitude, frequency, 4, sample_rate, duration)
+    voltage_wave = data.pure_sine_wave(voltage_amplitude, frequency, 0, sample_rate)
+    current_wave = data.pure_sine_wave(current_amplitude, frequency, 4, sample_rate)
 
     voltage = ec.rms(voltage_wave)
     current = ec.rms(current_wave)
@@ -41,4 +40,4 @@ if type == "single":
 
     plt.plot(voltage_wave)
     plt.plot(current_wave)
-    plt.show()
+    #plt.show()
