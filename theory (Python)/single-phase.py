@@ -12,7 +12,7 @@ noise_amplitude = 10
 def main():
     voltage_wave = data.pure_sine_wave(voltage_amplitude, frequency, 0, sample_rate)
     #voltage_wave = data.insert_noise(voltage_wave, noise_amplitude)
-    current_wave = data.pure_sine_wave(current_amplitude, frequency, -8, sample_rate)
+    current_wave = data.pure_sine_wave(current_amplitude, frequency, 0, sample_rate)
     #current_wave = data.insert_noise(current_wave, noise_amplitude)
     current_wave = data.insert_harmonics(current_wave, [0.01 * current_amplitude] * 15)
 
@@ -33,12 +33,11 @@ def main():
     current_rms = (current_integral / sample_rate) ** 0.5
     active_power = active_power_integral / sample_rate
 
-    current_fft = np.fft.fft(current_wave)[1:sample_rate // 2]
+    current_fft = np.fft.fft(current_wave)[2:sample_rate // 2]
     current_fft_amplitudes = (2 / sample_rate) * np.abs(current_fft)
     harmonic_currents_integral = 0
     for i in range(15):
-        harmonic_current = current_fft_amplitudes[i + 1] ** 2
-        harmonic_currents_integral += harmonic_current
+        harmonic_currents_integral += current_fft_amplitudes[i] ** 2
     total_harmonic_distortion = (harmonic_currents_integral ** 0.5) / current_rms
 
     apparent_power = voltage_rms * current_rms
@@ -53,7 +52,7 @@ def main():
 
     print()
     print(f"Voltage: {voltage_rms:.2f} Vac")
-    print(f"Current: {current_rms:.2f} Aac")
+    print(f"Current: {current_rms:.2f} A")
     print(f"Apparent Power: {(apparent_power / 1000):.2f} kVA")
     print(f"Active Power: {(active_power / 1000):.2f} kW")
     print(f"Cosφ: {cos_phi:.2f}")
