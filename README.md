@@ -8,23 +8,24 @@ O ESP32 Power Analyzer é um projeto de código aberto destinado ao desenvolvime
 
 O ESP32 Power Analyzer atualmente tem na teoria as seguintes funcionalidades:
 
+- **Frequência (Hz)**: Medição da frequência do sistema.
 - **Tensão True RMS (Vac)**: Medição precisa da tensão eficaz do sistema.
 - **Corrente True RMS (A)**: Medição precisa da corrente eficaz do sistema.
 - **Potência Aparente (kVA)**: Cálculo da potência aparente do sistema.
-- **Potência Ativa (kW)**: Cálculo da potência ativa consumida pelo sistema.
-- **Cosseno φ**: Cálculo do cosseno do ângulo de fase.
 - **Distorção Harmônica Total (%)**: Avaliação da distorção harmônica no sistema.
+- **Cosseno φ**: Cálculo do cosseno do ângulo de fase.
 - **Fator de Potência (%)**: Determinação do fator de potência do sistema.
-- **Potência de Distorção (DkVA)**: Cálculo da potência de distorção do sistema.
-- **Potência Reativa (kVAR)**: Cálculo da potência reativa do sistema.
+- **Potência Ativa (kW)**: Cálculo da potência ativa consumida pelo sistema.
+- **Potência Reativa (kVAr)**: Cálculo da potência reativa do sistema.
+- **Potência de Distorção (kVAD)**: Cálculo da potência de distorção do sistema.
 
 ## Estrutura do Projeto
 
 O projeto está organizado da seguinte forma:
 
-- **`src/`**: Contém o código fonte principal do analisador de energia, que vai no Microcontrolador.
-- **`theory (Python)/`**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador.
-- **`docs/`**: (**_Em desenvolvimento 🛠️_**) Documentação do projeto, incluindo manuais de usuário, especificações técnicas e outras informações relevantes.
+- **[`src/`](./src/)**: Contém o código fonte principal do analisador de energia, que vai no Microcontrolador.
+- **[`theory/`](./theory/)**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador.
+- **[`docs/`](./docs/)**: Documentação do projeto, incluindo manuais de usuário, especificações técnicas e outras informações relevantes.
 
 ## Como Contribuir
 
@@ -43,7 +44,7 @@ Para utilizar o ESP32 Power Analyzer, siga estas etapas:
 2. Instale as dependências necessárias:
     - kosme/arduinoFFT@^1.6.2
 3. Compile e carregue o código no seu ESP32-S3.
-4. Monte o circuito conforme o esquemático disponível na pasta `docs/`.
+4. Monte o circuito conforme o esquemático disponível na pasta [`docs/`](./docs/). (_**Em desenvolvimento...🛠️**_)
 4. Conecte o analisador de energia ao sistema que deseja analisar.
 5. Inicie o analisador e visualize os resultados pela interface serial.
 

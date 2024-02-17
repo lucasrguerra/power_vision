@@ -19,113 +19,153 @@ Para configurar o ambiente de desenvolvimento e começar a trabalhar com o ESP32
 
 ## Diagrama esquemático
 
-Em breve...
+_**Em breve...🛠️**_
 
 ## Matemática por trás do projeto
 
-O ESP32 Power Analyzer utiliza uma série de fórmulas e conceitos matemáticos para calcular com precisão os parâmetros elétricos do sistema. Abaixo estão as explicações sobre sua aplicação e implementação em Python.
+O ESP32 Power Analyzer utiliza uma série de fórmulas e conceitos matemáticos para calcular com precisão os parâmetros elétricos do sistema. Abaixo estão alguns dados sobre os cálculos utilizados no projeto e as suas versões convertidas em funções na linguagem de programação Python.
+
+_**Nota:** As fórmulas e cálculos a utilizados consideram que você tenha a mesma quantidade de amostras da tensão e da corrente. E que essa quantidade de amostras sejam um multiplo de 2, para ficilitar a utilização da FFT._
+
+### Filtragem do sinal
+
+Para remover os ruídos do sinal de corrente e tensão, é utilizado um filtro digital de média móvel. A função para calcular a média móvel é dada por:
+
+```python
+def filtro_media_movel(sinal, janela):
+    sinal_filtrado = []
+    fator_de_normalizacao = 1.0 / janela
+    quantidade_de_amostras = len(sinal)
+
+    for i in range(quantidade_de_amostras):
+        inicio = max(0, i - (janela // 2))
+        fim = min(quantidade_de_amostras, i + (janela // 2))
+        media = sum(sinal[inicio:fim]) * fator_de_normalizacao
+        sinal_filtrado.append(media)
+
+    return sinal_filtrado
+```
+
+### Frequência (Hz)
+
+A frequência é a quantidade de ciclos por segundo em um sinal elétrico. A função para calcular a frequência é dada por:
+
+```python
+def frequencia(sinal, milissegundos_entre_amostras):
+    quantidade_de_amostras = len(sinal)
+    duracoes_dos_ciclos = []
+    momento_da_ultima_amostra = 0
+
+    for i in range(quantidade_de_amostras):
+        amostra = sinal[i]
+
+        if amostra > 0 :
+            momento_atual = i * milissegundos_entre_amostras
+            if momento_da_ultima_amostra >= 0 and sinal[i - 1] < 0:
+                duracoes_dos_ciclos.append(momento_atual - momento_da_ultima_amostra)
+                momento_da_ultima_amostra = momento_atual
+
+    return 1000 / (sum(duracoes_dos_ciclos) / len(duracoes_dos_ciclos))
+    
+```
 
 ### Tensão True RMS (Vac)
 
-A tensão eficaz é uma medida da média quadrática (Ou Root Mean Square - RMS) da tensão em um sistema. Ela é o valor da real da tensão que está sendo aplicada ao sistema. A fórmula para calcular a tensão eficaz é dada por:
-
+A tensão eficaz é a calculada pela raiz quadrada da média dos quadrados das amostras do sinal de tensão, em inglês conhecida como Root Mean Square (RMS). A função para calcular a tensão eficaz é dada por:
 
 ```python
-integral_da_tensão = 0
-
-for amostra in amostras_da_tensao:
-    integral_da_tensao += amostra ** 2
-
-tensao_eficaz = sqrt(integral_da_tensao / len(amostras_da_tensao))
+def tensao_rms(sinal_da_tensao):
+    return math.sqrt(sum([amostra ** 2 for amostra in sinal_da_tensao]) / len(sinal_da_tensao))
 ```
 
 ### Corrente True RMS (A)
 
-Assim como na tensão eficaz, a corrente eficaz também é uma medida da média quadrática da corrente em um sistema. Ela é o valor da corrente que está passando ao sistema. A fórmula para calcular a corrente eficaz é dada por:
+A corrente eficaz é a calculada pela raiz quadrada da média dos quadrados das amostras do sinal de corrente, ou em inglês, Root Mean Square (RMS). A função para calcular a corrente eficaz é dada por:
 
 ```python
-integral_da_corrente = 0
-
-for amostra in amostras_da_corrente:
-    integral_da_corrente += amostra ** 2
-
-corrente_eficaz = sqrt(integral_da_corrente / len(amostras_da_corrente))
+def corrente_rms(sinal_da_corrente):
+    return math.sqrt(sum([amostra ** 2 for amostra in sinal_da_corrente]) / len(sinal_da_corrente))
 ```
 
-### Potência Aparente (kVA)
+### Potência Aparente (VA)
 
-A potência aparente é a medida da potência total em um sistema. Ela é o produto da tensão eficaz e da corrente eficaz. A fórmula para calcular a potência aparente é dada por:
+A potência aparente é a potência total em um circuito elétrico, e é dada pelo produto da tensão eficaz e da corrente eficaz. A função para calcular a potência aparente é dada por:
 
 ```python
-potencia_aparente = tensao_eficaz * corrente_eficaz
+def potencia_aparente(tensao_eficaz, corrente_eficaz):
+    return tensao_eficaz * corrente_eficaz
 ```
 
-### Potência Ativa (kW)
+### Distorção Harmônica Total (THD)
 
-A potência ativa é a medida da potência que executa trabalho em um sistema. Ela é dada pela média do produto da tensão e corrente em um sistema. A fórmula para calcular a potência ativa é dada por:
+A distorção harmônica total é uma medida da distorção harmônica em um sinal elétrico. E no projeto é calculada pelo sinal da corrente. Para fazer a análisa da distorção harmônica total, é necessário transformar o sinal do domínio do tempo para o domínio da frequência, e para isso foi utilizado a Transformada Rápida de Fourier, ou em inglês, Fast Fourier Transform (FFT). A função para calcular a distorção harmônica total é dada por:
 
 ```python
-integral_da_potencia_ativa = 0
+def thd(sinal_da_corrente, frequencia, corrente_eficaz, quantidade_de_harmonicas_analisadas, amplitude_minima_da_harmonica):
+    quantidade_de_amostras = len(sinal_da_corrente)
+    fft_da_corrente = np.fft.fft(sinal_da_corrente)
+    amplitudes_da_fft_da_corrente = (2 / quantidade_de_amostras) * np.abs(fft_da_corrente)
+    integral_do_quadrado_das_correntes = []
 
-for i in range(len(amostras_da_tensao)):
-    integral_da_potencia_ativa += amostras_da_tensao[i] * amostras_da_corrente[i]
+    segunda_harmonica = 2
+    for i in range(segunda_harmonica, quantidade_de_harmonicas_analisadas + 2):
+        frequencia_da_harmonica = int(i * frequencia)
+        frequecias_proximas = [
+            amplitudes_da_fft_da_corrente - 2,
+            amplitudes_da_fft_da_corrente - 1,
+            amplitudes_da_fft_da_corrente,
+            amplitudes_da_fft_da_corrente + 1,
+            amplitudes_da_fft_da_corrente + 2
+        ]
+        hamonica_real = max(frequencias_proximas)
 
-potencia_ativa = integral_da_potencia_ativa / len(amostras_da_tensao)
+        if hamonica_real > amplitude_minima_da_harmonica:
+            integral_do_quadrado_das_correntes.append(hamonica_real ** 2)
+
+    return math.sqrt(integral_do_quadrado_das_correntes) / corrente_eficaz
 ```
 
-Perceba que nesse caso é muito importante que a quantidade de amostras de tensão e corrente seja a mesma.
+### Potência Ativa (W)
 
-### Cosseno φ
-
-O cosseno do ângulo de fase é uma medida da defasagem entre a tensão e a corrente em um sistema. Ele é dado pela razão entre a potência ativa e a potência aparente. A fórmula para calcular o cosseno do ângulo de fase é dada por:
+A potência ativa é a potência que se converte em trabalho útil, e é dada pela soma do produto das amostras do sinal de tensão e corrente dividido pelo número de amostras. A função para calcular a potência ativa é dada por:
 
 ```python
-cosseno_phi = potencia_ativa / potencia_aparente
+def potencia_ativa(tensao, corrente):
+    return sum([tensao[i] * corrente[i] for i in range(len(tensao))]) / len(tensao)
 ```
 
-### Distorção Harmônica Total (%)
+### Cosseno da Fase (cos(θ))
 
-A distorção harmônica total é uma medida da distorção harmônica em um sistema. Para calcular ela, é necessário transformar as amostras de corrente do domínio do tempo para o domínio da frequência e calcular a raiz quadrada da soma dos quadrados das amplitudes das componentes harmônicas. Nesse projeto, eu utilizei a Transformada Rápida de Fourier (FFT) para realizar essa transformação. A fórmula para calcular a distorção harmônica total é dada por:
+O cosseno da fase é a medida do deslocamento angular entre a tensão e a corrente em um circuito elétrico. A função para calcular o cosseno da fase é dada por:
 
 ```python
-corrente_no_dominio_da_frequencia = fft(amostras_da_corrente_no_dominio_do_tempo)
-harmonicas = corrente_no_dominio_da_frequencia[2: numero_de_amotras // 2]
-amplitude_das_harmonicas = []
-
-for harmonica in harmonicas:
-    amplitude_da_harmonica = (2 / numero_de_amostras) * abs(harmonica)
-    amplitude_das_harmonicas.append(amplitude_da_harmonica)
-
-integral_da_distorcao_harmonica = 0
-
-for amplitude in range(quantidade_de_harmonicas_analisadas):
-    integral_da_distorcao_harmonica += amplitude ** 2
-
-distorcao_harmonica_total = sqrt(integral_da_distorcao_harmonica) / corrente_eficaz
+def cosseno_da_fase(potenca_ativa, potencia_aparente):
+    return potencia_ativa / potencia_aparente
 ```
 
-Perceba que eu eliminei as 2 primeiras componentes harmônicas, pois elas são a componente DC (frequência 0) e a componente fundamental (frequência do sistema. Nos testes 60Hz), respectivamente. E também, eu dividi por 2 o número de amostras, pois a FFT retorna a transformada de Fourier simétrica, ou seja, a segunda metade dos valores é um espelho da primeira metade.
+### Fator de Potência (FP)
 
-### Fator de Potência
-
-O fator de potência é uma medida da eficiência energética de um sistema. Ele indica a quantidade de energia que está sendo utilizada para realizar trabalho em um sistema. Normalmente, o fator de potência é igual ao cosseno do ângulo de fase. Mas nesse caso, eu utilizei uma fórmula que também leva em consideração a distorção harmônica total. A fórmula para calcular o fator de potência é dada por:
+O fator de potência é a medida da eficiência de um circuito elétrico, e é dada pelo cosseno da fase. A função para calcular o fator de potência é dada por:
 
 ```python
-fator_de_potencia = cosseno_phi / sqrt(1 + distorcao_harmonica_total ** 2)
+def fator_de_potencia(cosseno_da_fase, distorcao_harmonica_total):
+    return cosseno_da_fase / math.sqrt(1 + distorcao_harmonica_total ** 2)
 ```
 
-### Potência de Distorsão (DkVA)
+### Potência Reativa (VAr)
 
-A potência de distorção é a medida da potência que é perdida devido à distorção harmônica em um sistema. Ela é dada pela seguinte fórmula:
+A potência reativa é a potência que não se converte em trabalho útil, mas é necessária para manter os campos eletricos e magnéticos em um circuito elétrico. A função para calcular a potência reativa é dada por:
 
 ```python
-potencia_de_distorsao = sqrt((potencia_aparente ** 2) * (distorcao_harmonica_total ** 2 / (1 + distorcao_harmonica_total ** 2)))
+def potencia_reativa(potencia_aparente, fator_de_potencia):
+    return math.sin(math.acos(fator_de_potencia)) * potencia_aparente
 ```
 
-### Potência Reativa (kVAR)
+### Potência de Distorsão (VAD)
 
-A potência reativa é a medida da potência que é utilizada para manutenção dos campos elétricos e magnéticos em um sistema. Ela é dada pela seguinte fórmula:
+A potência de distorção é a potência que é perdida devido a distorção harmônica em um circuito elétrico. A função para calcular a potência de distorção é dada por:
 
 ```python
-potencia_reativa = sqrt(potencia_aparente ** 2 - (potencia_ativa ** 2 + potencia_de_distorsao ** 2))
+def potencia_de_distorsao(potencia_aparente, potencia_ativa, potencia_reativa):
+    return math.sqrt(abs((potencia_aparente ** 2) - (potencia_ativa ** 2) - (potencia_reativa ** 2)))
 ```
