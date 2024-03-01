@@ -16,10 +16,10 @@ sample_rate = 256 * 60
 
 # Generate the voltage and current data
 voltage_wave = generate_data.pure_sine_wave(quantity_of_samples, voltage_amplitude, system_frequency, 0, sample_rate)
-voltage_wave = generate_data.add_noise(voltage_wave, 10)
+voltage_wave = generate_data.add_noise(voltage_wave, 5)
 
 current_wave = generate_data.pure_sine_wave(quantity_of_samples, current_amplitude, system_frequency, 20, sample_rate)
-current_wave = generate_data.add_noise(current_wave, 3)
+current_wave = generate_data.add_noise(current_wave, 1)
 current_wave = generate_data.add_harmonic(current_wave, 20, 2 * system_frequency)
 #current_wave = generate_data.add_harmonic(current_wave, 25, 3 * system_frequency)
 
@@ -81,6 +81,7 @@ def main():
     apparent_power = voltage_rms * current_rms
     active_power = active_power_integral / number_of_samples
     cosine_phi = active_power / apparent_power
+    theta_angle = 0
 
 
 
