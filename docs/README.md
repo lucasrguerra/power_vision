@@ -27,7 +27,8 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 - **3x Módulo de interrupção de níveis de corrente - ACS712**
 - **2x Pin Socket 2.54mm (01x22P)**
 - **1x Microswitch - SS-12D00G4**
-- **22x Diodo Zener 3V3 - IN4733A**
+- **28x Diodo Zener 3V3 - IN4733A**
+- **1x Diodo Retificador - 1N4007**
 - **1x Resistor 6.8Ω - 1/4W 1%**
 - **3x Resistor 20Ω - 1/4W 1%**
 - **1x Resistor 22Ω - 1/4W 1%**
