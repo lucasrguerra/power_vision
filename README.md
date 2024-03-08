@@ -51,7 +51,17 @@ Para utilizar o ESP32 Power Analyzer, siga estas etapas:
 
 ## Créditos
 
-Este projeto é atualmente mantido por [Lucas Rayan](https://github.com/lucasrguerra).
+Este projeto foi criador por [Lucas Rayan](https://github.com/lucasrguerra) (vulgo "eu") e continua sendo mantido por ele.
+
+## Agradecimentos
+
+A minha mãe, que sempre lutou muito para que eu e minha irmã tivéssemos uma boa educação, e que sempre me apoiou em todas as minhas decisões. E que é sem dúvida a pessoa mais importante da minha vida.
+
+Ao [Prof. Dr. Abner Corrêa Barros](https://www.linkedin.com/in/abner-barros-5b86409/), meu orientador, que sempre esteve disposto a ajudar e doar seu tempo e conhecimento para contribuir com o desenvolvimento do projeto.
+
+A minha grande amiga e companheira de vida, [Vitória das Dores](https://github.com/VitoriaDasDores), que sempre esteve ao meu lado me apoiando e me ajudando a superar todos os desafios.
+
+Ao meu grande amigo e grande Engenheiro Eletrônico, [João Pontes](https://github.com/JoaoPonTechS), que sempre esteve disposto a ajudar e ouvir minhas ideias e dúvidas.
 
 ## Licença
 
