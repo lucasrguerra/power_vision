@@ -24,8 +24,9 @@ O ESP32 Power Analyzer atualmente tem na teoria as seguintes funcionalidades:
 O projeto está organizado da seguinte forma:
 
 - **[`src/`](./src/)**: Contém o código fonte principal do analisador de energia, que vai no Microcontrolador.
-- **[`theory/`](./theory/)**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador.
 - **[`docs/`](./docs/)**: Documentação do projeto, incluindo manuais de usuário, especificações técnicas e outras informações relevantes.
+- **[`theory/`](./theory/)**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador.
+- **[`boards/`](./boards/)**: Contém informações sobre as placas desenvolvidas para o projeto e os arquivos de fabricação no formato Gerber.
 
 ## Como Contribuir
 

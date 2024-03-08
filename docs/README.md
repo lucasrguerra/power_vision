@@ -17,9 +17,37 @@ O ESP32 Power Analyzer é um projeto de código aberto que visa fornecer uma sol
 
 Para configurar o ambiente de desenvolvimento e começar a trabalhar com o ESP32 Power Analyzer, basta ter o [PlatformIO](https://platformio.org) instalado em seu ambiente de desenvolvimento. Eu recomendo usar o [VSCode](https://code.visualstudio.com) com a extensão PlatformIO.
 
+Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projeto no VSCode. O PlatformIO irá instalar automaticamente todas as dependências necessárias para o projeto.
+
+## Componentes utilizados
+
+- **1x Microcontrolador - ESP32-S3 DevKitC**
+- **4x Sensor de corrente (não invasivo) - STC-013 100A**
+- **6x Terminal de parafuso - 2 Pinos P5.08mm**
+- **3x Módulo de interrupção de níveis de corrente - ACS712**
+- **2x Pin Socket 2.54mm (01x22P)**
+- **1x Microswitch - SS-12D00G4**
+- **22x Diodo Zener 3V3 - IN4733A**
+- **1x Resistor 6.8Ω - 1/4W 1%**
+- **3x Resistor 20Ω - 1/4W 1%**
+- **1x Resistor 22Ω - 1/4W 1%**
+- **3x Resistor 68Ω - 1/4W 1%**
+- **6x Resistor 680Ω - 1/4W 1%**
+- **4x Resistor 10kΩ - 1/4W 1%**
+- **3x Resistor 150kΩ - 1/4W 1%**
+- **3x Resistor 270kΩ - 1/4W 1%**
+
 ## Diagrama esquemático
 
-_**Em breve...🛠️**_
+<img alt="Diagrama esquemático"
+    src="./schematic.png"
+    height="500">
+
+## Placa do projeto
+
+<img alt="Placa do projeto"
+    src="./board.png"
+    height="500">
 
 ## Matemática por trás do projeto
 
