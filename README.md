@@ -45,7 +45,7 @@ Para utilizar o ESP32 Power Analyzer, siga estas etapas:
 2. Instale as dependências necessárias:
     - kosme/arduinoFFT@^1.6.2
 3. Compile e carregue o código no seu ESP32-S3.
-4. Monte o circuito conforme o esquemático disponível na pasta [`docs/`](./docs/). (_**Em desenvolvimento...🛠️**_)
+4. Monte o circuito conforme o esquemático disponível na pasta [`docs/`](./docs/).
 4. Conecte o analisador de energia ao sistema que deseja analisar.
 5. Inicie o analisador e visualize os resultados pela interface serial.
 

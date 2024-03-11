@@ -40,15 +40,11 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 
 ## Diagrama esquemático
 
-<img alt="Diagrama esquemático"
-    src="./schematic.png"
-    height="500">
+![Diagrama esquemático](./schematic.png)
 
 ## Placa do projeto
 
-<img alt="Placa do projeto"
-    src="./board.png"
-    height="500">
+![Placa do projeto](./board.png)
 
 ## Matemática por trás do projeto
 
