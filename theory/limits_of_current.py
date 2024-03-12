@@ -1,5 +1,5 @@
-current_input = 0.045
-output_current_resistor = 22
+current_input = 0.1125
+output_current_resistor = 9.1
 
 raise_of_two = 2 ** 0.5
 output_voltage = current_input * output_current_resistor
