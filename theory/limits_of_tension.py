@@ -1,6 +1,6 @@
-input_ac_voltage = 380
-input_load_resistor = 270000
-output_load_resistor = 680
+input_ac_voltage = 425
+input_load_resistor = 150000
+output_load_resistor = 390
 
 raise_of_two = 2 ** 0.5
 input_current = input_ac_voltage / input_load_resistor

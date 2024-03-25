@@ -2,14 +2,12 @@
 #include <Arduino.h>
 
 
+
 /* Board includes */
 #include <esp32-hal-adc.h>
 #include <esp_adc_cal.h>
 #include <driver/adc.h>
 
-
-/* Math includes */
-#include <arduinoFFT.h>
 
 
 /* Project definitions */
@@ -22,13 +20,17 @@
 #define CORRECTION_FACTOR 0.1931
 
 
+
 /* Global variables */
 esp_adc_cal_characteristics_t adc_characteristics;
 float voltage[SENOIDE_SAMPLE_RATE];
 
 
+
 void moving_avarage_filter(float *voltage, uint16_t window_size);
 void voltage_correction(float *voltage, float correction_factor);
+
+
 
 /* Setup function */
 void setup() {
@@ -51,6 +53,7 @@ void setup() {
     Serial.println("Default");
   }
 }
+
 
 
 /* Loop function */
@@ -83,6 +86,7 @@ void loop() {
 }
 
 
+
 /* Moving avarage filter */
 void moving_avarage_filter(float *voltage, uint16_t window_size) {
   float normalization_factor = 1.0 / window_size;
@@ -98,6 +102,7 @@ void moving_avarage_filter(float *voltage, uint16_t window_size) {
     *voltage_data = sum * normalization_factor;
   }
 }
+
 
 
 /* Voltage correction */
