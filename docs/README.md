@@ -22,21 +22,30 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 ## Componentes utilizados
 
 - **1x Microcontrolador - ESP32-S3 DevKitC**
-- **4x Sensor de corrente (não invasivo) - STC-013 100A**
-- **6x Terminal de parafuso - 2 Pinos P5.08mm**
-- **3x Módulo de interrupção de níveis de corrente - ACS712**
+- **1x Cartão microSD - Módulo de Cartão SD (SPI)**
+- **4x Sensor de corrente (não invasivo) - 3000:1 (Até 1000A)**
+- **4x Relé - SRD-03VDC-SL-C (Até 10A)**
+- **3x Sensor de tensão - ZMPT101B**
+- **1x Regulador de Carga - Módulo TP4056**
+- **1x Regulador de Tensão - LM1117T-3.3**
+- **1x Fonte de Tensão - HLK-5M05**
+- **3x Microswitch - SS-12D00G4**
+- **1x Capacitor 1000uF 16v**
+- **20x Diodo Zener 3V3 - IN4733A**
+- **4x Diodo Retificador - 1N4007**
+- **7x Terminal de parafuso - 2 Pinos P5.08mm**
 - **2x Pin Socket 2.54mm (01x22P)**
-- **1x Microswitch - SS-12D00G4**
-- **28x Diodo Zener 3V3 - IN4733A**
-- **1x Diodo Retificador - 1N4007**
-- **1x Resistor 6.8Ω - 1/4W 1%**
-- **3x Resistor 20Ω - 1/4W 1%**
-- **1x Resistor 22Ω - 1/4W 1%**
+- **2x Pin Socket 2.54mm (01x06P)**
+- **1x Pin Socket 2.54mm (01x04P)**
+- **1x Pin Socket 2.54mm (01x03P)**
+- **1x Pin Socket 2.54mm (01x01P)**
+- **4x Resistor 9.1Ω - 1/4W 1%**
+- **4x Resistor 30Ω - 1/4W 1%**
+- **3x Resistor 620Ω - 1/4W 1%**
 - **3x Resistor 68Ω - 1/4W 1%**
-- **6x Resistor 680Ω - 1/4W 1%**
-- **4x Resistor 10kΩ - 1/4W 1%**
-- **3x Resistor 150kΩ - 1/4W 1%**
-- **3x Resistor 270kΩ - 1/4W 1%**
+- **2x Resistor 10kΩ - 1/4W 1%**
+- **3x Resistor 200kΩ - 1/4W 1%**
+- **6x Resistor 600kΩ - 1/4W 1%**
 
 ## Diagrama esquemático
 
