@@ -46,11 +46,6 @@ float voltage[SENOIDE_SAMPLE_RATE];
 
 
 
-void moving_avarage_filter(float *voltage, uint16_t window_size);
-void voltage_correction(float *voltage, float correction_factor);
-
-
-
 /* Setup function */
 void setup() {
   Serial.begin(115200);
