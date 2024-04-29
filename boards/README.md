@@ -2,10 +2,15 @@
 
 ## Descrição
 
+
+
 Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto utilizando o software KiCAD. Dentre esses arquivos, estão o esquemático, o layout da placa e seus arquivos de fabricação no formato Gerber.
+
+
 
 ## Versões Disponíveis
 
+- **[`v3.0`](./v3.0/)**: Essa é a sétima versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v2.1`](./v2.1/)**: Essa é a sexta versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v2.0`](./v2.0/)**: Essa é a quinta versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v1.1`](./v1.1/)**: Essa é a quarta versão da placa e no modelo THT (Through-Hole Technology).
@@ -16,6 +21,15 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 
 ## Dados das Placas
+
+
+
+### Placa v3.0 (THT) - 139,700 x 116,840 mm (Atual)
+
+Em desenvolvimento 🛠️
+
+Essa placa foi desenvolvida para ser condicionar melhor os sinais de corrente e tensão, utilizando diversos buffers para isso. Ela não possui mais um circuito de seleção de níveis de corrente, operando de acordo com a resistor shunt utilizado. Ela também não possui mais um circuito de gerenciamento de bateria.
+
 
 ### Placa v2.1 (THT) - 139,700 x 116,840 mm (Atual)
 

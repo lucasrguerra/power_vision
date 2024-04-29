@@ -1,15 +1,20 @@
-current_input = 0.004
-output_current_resistor = 270
+current_ratio = 3000
+load_current = 80
+secundary_resistor = 33
+raise_of_three = 3 ** 0.5
 
-raise_of_two = 2 ** 0.5
-output_voltage = current_input * output_current_resistor
-output_voltage_peak = output_voltage * raise_of_two
-output_voltage_peak_to_peak = output_voltage_peak * 2
-current_transformation_ratio = current_input / output_voltage
+
+
+secundary_current = load_current / current_ratio
+secundary_rms_voltage = secundary_resistor * secundary_current
+secundary_peak_voltage = secundary_rms_voltage * raise_of_three
+secundary_peak_to_peak_voltage = secundary_peak_voltage * 2
+
+
 
 print()
-print(f"Output rms voltage: {output_voltage:.5f} Vac")
-print(f"Output peak voltage: {output_voltage_peak:.5f} Vac")
-print(f"Output peak-to-peak voltage: {output_voltage_peak_to_peak:.5f} Vdc")
-print(f"Current transformation ratio: {current_transformation_ratio:.5f}")
+print(f"Secundary current: {secundary_current:.5f} A")
+print(f"Secundary rms voltage: {secundary_rms_voltage:.5f} Vac")
+print(f"Secundary peak voltage: {secundary_peak_voltage:.5f} Vac")
+print(f"Secundary peak to peak voltage: {secundary_peak_to_peak_voltage:.5f} Vac")
 print()

@@ -2,21 +2,15 @@
 
 Bem-vindo à documentação da teoria por trás do ESP32 Power Analyzer. Este documento fornece informações detalhadas sobre a matemática e os cálculos utilizados no projeto para medir e calcular parâmetros elétricos, como tensão, corrente, potência ativa, potência reativa, fator de potência e muito mais.
 
-## Limites de medição
 
-Assim como qualquer equipamento de medição, o ESP32 Power Analyzer possui limites de medição para cada parâmetro elétrico. Abaixo estão os limites de medição que este projeto visa alcançar:
-
-Tensão FF: 0-600 Vac  
-Tensão FN: 0-425 Vac  
-Corrente F: 0-120 A  
-Corrente N: 0-360 A  
-Frequência: 45-65 Hz  
 
 ## Matemática por trás do projeto
 
 O ESP32 Power Analyzer utiliza uma série de fórmulas e conceitos matemáticos para calcular com precisão os parâmetros elétricos do sistema. Abaixo estão alguns dados sobre os cálculos utilizados no projeto e as suas versões convertidas em funções na linguagem de programação Python.
 
 _**Nota:** As fórmulas e cálculos a utilizados consideram que você tenha a mesma quantidade de amostras da tensão e da corrente. E que essa quantidade de amostras sejam um multiplo de 2, para ficilitar a utilização da FFT._
+
+
 
 ### Filtragem do sinal
 
@@ -36,6 +30,8 @@ def filtro_media_movel(sinal, janela):
 
     return sinal_filtrado
 ```
+
+
 
 ### Frequência (Hz)
 
@@ -60,6 +56,8 @@ def frequencia(sinal, milissegundos_entre_amostras):
     
 ```
 
+
+
 ### Tensão True RMS (Vac)
 
 A tensão eficaz é a calculada pela raiz quadrada da média dos quadrados das amostras do sinal de tensão, em inglês conhecida como Root Mean Square (RMS). A função para calcular a tensão eficaz é dada por:
@@ -68,6 +66,8 @@ A tensão eficaz é a calculada pela raiz quadrada da média dos quadrados das a
 def tensao_rms(sinal_da_tensao):
     return math.sqrt(sum([amostra ** 2 for amostra in sinal_da_tensao]) / len(sinal_da_tensao))
 ```
+
+
 
 ### Corrente True RMS (A)
 
@@ -78,6 +78,8 @@ def corrente_rms(sinal_da_corrente):
     return math.sqrt(sum([amostra ** 2 for amostra in sinal_da_corrente]) / len(sinal_da_corrente))
 ```
 
+
+
 ### Potência Aparente (VA)
 
 A potência aparente é a potência total em um circuito elétrico, e é dada pelo produto da tensão eficaz e da corrente eficaz. A função para calcular a potência aparente é dada por:
@@ -86,6 +88,8 @@ A potência aparente é a potência total em um circuito elétrico, e é dada pe
 def potencia_aparente(tensao_eficaz, corrente_eficaz):
     return tensao_eficaz * corrente_eficaz
 ```
+
+
 
 ### Distorção Harmônica Total (THD)
 
@@ -116,6 +120,8 @@ def thd(sinal_da_corrente, frequencia, corrente_eficaz, quantidade_de_harmonicas
     return math.sqrt(integral_do_quadrado_das_correntes) / corrente_eficaz
 ```
 
+
+
 ### Potência Ativa (W)
 
 A potência ativa é a potência que se converte em trabalho útil, e é dada pela soma do produto das amostras do sinal de tensão e corrente dividido pelo número de amostras. A função para calcular a potência ativa é dada por:
@@ -124,6 +130,8 @@ A potência ativa é a potência que se converte em trabalho útil, e é dada pe
 def potencia_ativa(tensao, corrente):
     return sum([tensao[i] * corrente[i] for i in range(len(tensao))]) / len(tensao)
 ```
+
+
 
 ### Cosseno da Fase (cos(θ))
 
@@ -134,6 +142,8 @@ def cosseno_da_fase(potenca_ativa, potencia_aparente):
     return potencia_ativa / potencia_aparente
 ```
 
+
+
 ### Fator de Potência (FP)
 
 O fator de potência é a medida da eficiência de um circuito elétrico, e é dada pelo cosseno da fase. A função para calcular o fator de potência é dada por:
@@ -143,6 +153,8 @@ def fator_de_potencia(cosseno_da_fase, distorcao_harmonica_total):
     return cosseno_da_fase / math.sqrt(1 + distorcao_harmonica_total ** 2)
 ```
 
+
+
 ### Potência Reativa (VAr)
 
 A potência reativa é a potência que não se converte em trabalho útil, mas é necessária para manter os campos eletricos e magnéticos em um circuito elétrico. A função para calcular a potência reativa é dada por:
@@ -151,6 +163,8 @@ A potência reativa é a potência que não se converte em trabalho útil, mas �
 def potencia_reativa(potencia_aparente, fator_de_potencia):
     return math.sin(math.acos(fator_de_potencia)) * potencia_aparente
 ```
+
+
 
 ### Potência de Distorsão (VAD)
 
