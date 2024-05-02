@@ -26,14 +26,14 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 ### Placa v3.0 (THT) - 139,700 x 116,840 mm (Atual)
 
-Em desenvolvimento 🛠️
+![Placa v3.0](./v3.0/board.png)
 
 Essa placa foi desenvolvida para ser condicionar melhor os sinais de corrente e tensão, utilizando diversos buffers para isso. Ela não possui mais um circuito de seleção de níveis de corrente, operando de acordo com a resistor shunt utilizado. Ela também não possui mais um circuito de gerenciamento de bateria.
 
 
 ### Placa v2.1 (THT) - 139,700 x 116,840 mm (Atual)
 
-![Placa v1.1](./v2.1/board.png)
+![Placa v2.1](./v2.1/board.png)
 
 Essa placa foi desenvolvida para ser mais compacta e organizada que a anterior. Além disso, ela possui pequenas correções, como a seleção manual do nível de corrente a ser utilizado nas medições e também  a largura de cada trilha da placa, aumentando a largura de trilhas com maior corrente. Nessa placa a cor da placa também foi alterada para preto.
 
@@ -41,7 +41,7 @@ Essa placa foi desenvolvida para ser mais compacta e organizada que a anterior. 
 
 ### Placa v2.1 (THT) - 144,780 x 101,419 mm
 
-![Placa v1.1](./v2.0/board.png)
+![Placa v2.0](./v2.0/board.png)
 
 Essa placa possui um menos transformadores de potencial, mas tem agora um circuito resposável pelo gerenciamento da energia utilizada na placa, com suporte para baterias 18650 de Ion-Lítion, um seleção de níveis de corrente, sendo eles 300A e 1000A, e suporte a módulos de cartão SD. Além disso, a placa possui um layout mais organizado que as anteriores. Além disso, ela possui pequenas correções, como a adição de um diodo retificador para proteção do circuito de seleção de níveis de corrente e a correção do identificador de todos os componentes no Footprint.
 
