@@ -42,10 +42,10 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 - **1x Capacitor 100uF 16v**
 - **20x Diodo Zener 3V3 - IN4733A**
 - **2x Pin Socket 2.54mm (01x22P)**
-- **2x Pin Socket 2.54mm (01x06P)**
-- **1x Pin Socket 2.54mm (01x04P)**
-- **1x Pin Socket 2.54mm (01x03P)**
-- **1x Pin Socket 2.54mm (01x01P)**
+- **2x Pin Header 2.54mm (01x06P)**
+- **1x Pin Header 2.54mm (01x04P)**
+- **1x Pin Header 2.54mm (01x03P)**
+- **1x Pin Header 2.54mm (01x01P)**
 - **6x Socket DIP-8**
 - **4x Resistor 2.7Ω - 1/4W 1%**
 - **3x Resistor 470Ω - 1/4W 1%**
