@@ -24,14 +24,14 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 
 
-### Placa v3.0 (THT) - 139,700 x 116,840 mm (Atual)
+### Placa v3.0 (THT) - 115,189 x 103,886 mm (Atual)
 
 ![Placa v3.0](./v3.0/board.png)
 
-Essa placa foi desenvolvida para ser condicionar melhor os sinais de corrente e tensão, utilizando diversos buffers para isso. Ela não possui mais um circuito de seleção de níveis de corrente, operando de acordo com a resistor shunt utilizado. Ela também não possui mais um circuito de gerenciamento de bateria.
+Essa placa foi desenvolvida para ser condicionar melhor os sinais de corrente e tensão, utilizando diversos buffers para isso. Ela não possui mais um circuito de seleção de níveis de corrente, operando de acordo com a resistor shunt utilizado. Ela também não possui mais um circuito de gerenciamento de bateria. Vale ressaltar que todos os resistores shunt utilizados foram recalculados para melhorar a precisão das medições e aproveitar melhor a faixa de operação do ADC do ESP32-S3. Além disso, a placa possui um layout mais compacto e organizado que as anteriores.
 
 
-### Placa v2.1 (THT) - 139,700 x 116,840 mm (Atual)
+### Placa v2.1 (THT) - 139,700 x 116,840 mm
 
 ![Placa v2.1](./v2.1/board.png)
 
