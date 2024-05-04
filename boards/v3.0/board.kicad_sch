@@ -6,8 +6,8 @@
 
   (title_block
     (title "ESP32 Power Analyser V3.0 Schematics")
-    (date "03/05/2024")
-    (rev "1.3")
+    (date "04/05/2024")
+    (rev "1.4")
     (company "https://www.linkedin.com/in/lucasrguerra")
   )
 
@@ -3323,13 +3323,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d7713eed-aec3-44af-b88c-b51d13e19981)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.2475 92.71 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Vcc" (shape input) (at 266.7 30.48 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid dd620016-1f4d-41b9-badc-b2eea01e8a4f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 272.951 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
