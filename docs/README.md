@@ -8,8 +8,9 @@ Bem-vindo à documentação oficial do ESP32 Power Analyzer. Este documento forn
 
 1. [Introdução](#introdução)
 2. [Configuração do Ambiente de Desenvolvimento](#configuração-do-ambiente-de-desenvolvimento)
-3. [Diagrama esquemático](#diagrama-esquemático)
-4. [Matemática por trás do projeto](#matemática-por-trás-do-projeto)
+3. [Componentes utilizados](#componentes-utilizados)
+4. [Diagrama esquemático](#diagrama-esquemático)
+5. [Placa do projeto](#placa-do-projeto)
 
 
 
