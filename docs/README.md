@@ -7,16 +7,23 @@ Bem-vindo à documentação oficial do ESP32 Power Analyzer. Este documento forn
 ## Conteúdo
 
 1. [Introdução](#introdução)
-2. [Configuração do Ambiente de Desenvolvimento](#configuração-do-ambiente-de-desenvolvimento)
-3. [Componentes utilizados](#componentes-utilizados)
-4. [Diagrama esquemático](#diagrama-esquemático)
-5. [Placa do projeto](#placa-do-projeto)
+2. [Simulação do Circuito](#simulação-do-circuito)
+3. [Configuração do Ambiente de Desenvolvimento](#configuração-do-ambiente-de-desenvolvimento)
+4. [Componentes utilizados](#componentes-utilizados)
+5. [Diagrama esquemático](#diagrama-esquemático)
+6. [Placa do projeto](#placa-do-projeto)
 
 
 
 ## Introdução
 
 O ESP32 Power Analyzer é um projeto de código aberto que visa fornecer uma solução acessível e eficaz para análise de energia em sistemas elétricos. Ele busca oferecer uma variedade de funcionalidades para medição e cálculo de parâmetros elétricos, como tensão, corrente, potência ativa, potência reativa, fator de potência e muito mais com um custo acessível. O projeto é baseado no microcontrolador ESP32-S3 e utiliza sensores de corrente e tensão populares e de baixo custo para realizar as medições.
+
+
+
+## Simulação do Circuito
+
+Para simular o circuito do ESP32 Power Analyzer, você pode usar o software [Falstad Circuit Simulator](https://www.falstad.com/circuit/). Basta abrir o arquivo [simulation.falstad](./simulation.falstad) no simulador e você poderá visualizar e simular o circuito do projeto.
 
 
 
