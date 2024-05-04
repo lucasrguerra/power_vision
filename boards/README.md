@@ -24,7 +24,7 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 
 
-### Placa v3.0 (THT) - 115,189 x 103,886 mm (Atual)
+### Placa v3.0 (THT) - 113,284 x 98,044 mm (Atual)
 
 ![Placa v3.0](./v3.0/board.png)
 
