@@ -43,8 +43,11 @@ Frequência: 45-65 Hz
 O projeto está organizado da seguinte forma:
 
 - **[`src/`](./src/)**: Contém o código fonte principal do analisador de energia, que vai no Microcontrolador. (Em desenvolvimento 🛠️)
+
 - **[`docs/`](./docs/)**: Documentação do projeto, incluindo manuais de usuário, especificações técnicas e outras informações relevantes.
-- **[`theory/`](./theory/)**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador.
+
+- **[`theory/`](./theory/)**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador. (Sendo atualizado para a transformada Wavelet)
+
 - **[`boards/`](./boards/)**: Contém informações sobre as placas desenvolvidas para o projeto e os arquivos de fabricação no formato Gerber.
 
 
