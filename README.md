@@ -32,26 +32,32 @@ O ESP32 Power Analyzer atualmente tem na teoria as seguintes funcionalidades:
 Assim como qualquer equipamento de medição, o ESP32 Power Analyzer possui limites de medição para cada parâmetro elétrico. Abaixo estão os limites de medição que este projeto visa alcançar:
 
 
-### Modelo A
-O modelo A é destinado a medições em sistemas residenciais e pequenos comércios. Este modelo possui limites de tensão mais baixos.
 
-Tensão de Fase: 0-175 Vac  
-Corrente: 0-1000 A  
-Frequência: 45-65 Hz
+### Frequência
+O dispositivo possiu uma forma versátil de calcular a frequência, se mas o intervalo de leitura esperado é entre 45Hz e 60Hz.
 
-### Modelo B
-O modelo B é destinado a medições em sistemas, residenciais, comerciais e industriais de pequeno e médio porte. Este modelo possui limites de tensão intermediários.
 
-Tensão de Fase: 0-275 Vac  
-Corrente: 0-1000 A  
-Frequência: 45-65 Hz
 
-### Modelo C
-O modelo C é destinado a medições em sistemas comerciais e industriais de médio e grande porte. Este modelo possui limites de tensão mais altos.
+### Tensão
+O dispositivo é destinado a medições em sistemas residenciais, comerciais e industriais de pequeno e médio porte, para isso, o dispositivo conta com 4 níveis possíveis de tensão, sendo eles:
 
-Tensão de Fase: 0-475 Vac  
-Corrente: 0-1000 A  
-Frequência: 45-65 Hz
+Nível 3 = 0-175Vac (127V)  
+Nível 2 = 0-275Vac (220V)  
+Nível 1 = 0-440Vac (380V)  
+Nível 0 = 0-475Vac (440V)  
+
+
+
+### Corrente
+O dispositivo é destinado a medições em sistemas residenciais, comerciais e industriais de pequeno e médio porte, para isso, o dispositivo conta com 7 níveis possíveis de corrente, sendo eles:
+
+Nível 6 = Até 80A
+Nível 5 = Até 120A
+Nível 4 = Até 200A
+Nível 3 = Até 300A 
+Nível 2 = Até 500A
+Nível 1 = Até 750A 
+Nível 0 = Até 1000A  
 
 
 
