@@ -1,13 +1,13 @@
 input_ac_voltage = 475
-input_load_resistor = 240000
-secondary_resistor = 470
-raise_of_three = 3 ** 0.5
+input_load_resistor = 270000
+secondary_resistor = 510
+raise_of_two = 3 ** 0.5
 
 
 
 primary_current = input_ac_voltage / input_load_resistor
 secundary_rms_voltage = secondary_resistor * primary_current
-secondary_peak_voltage = secundary_rms_voltage * raise_of_three
+secondary_peak_voltage = secundary_rms_voltage * raise_of_two
 secundary_peak_to_peak_voltage = secondary_peak_voltage * 2
 
 

@@ -1,13 +1,13 @@
 current_ratio = 3000
-load_current = 80
-secundary_resistor = 33
-raise_of_three = 3 ** 0.5
+load_current = 1000
+secundary_resistor = 3.3
+raise_of_two = 2 ** 0.5
 
 
 
 secundary_current = load_current / current_ratio
 secundary_rms_voltage = secundary_resistor * secundary_current
-secundary_peak_voltage = secundary_rms_voltage * raise_of_three
+secundary_peak_voltage = secundary_rms_voltage * raise_of_two
 secundary_peak_to_peak_voltage = secundary_peak_voltage * 2
 
 

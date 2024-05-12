@@ -10,6 +10,7 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 ## Versões Disponíveis
 
+- **[`v3.1`](./v3.1/)**: Essa é a oitava versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v3.0`](./v3.0/)**: Essa é a sétima versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v2.1`](./v2.1/)**: Essa é a sexta versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v2.0`](./v2.0/)**: Essa é a quinta versão da placa e no modelo THT (Through-Hole Technology).
@@ -21,6 +22,14 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 
 ## Dados das Placas
+
+
+
+### Placa v3.1 (THT) - 113,284 x 98,044 mm (Atual)
+
+![Placa v3.1](./v3.1/board.png)
+
+Essa placa foi desenvolvida sem a necessidade da leitura das tensões de linha. Ela possui em seu esquemático as tabelas de resistores para cada nível de tensão e corrente no qual se deseja operar. Vale ressaltar que todos os resistores shunt utilizados foram recalculados para melhorar a precisão das medições e aproveitar melhor a faixa de operação do ADC do ESP32-S3, assim como, todos os sinais agora estão conectados a canais do ADC 1 do ESP32-S3, trazendo uma maior precisão as leituras. Além disso, a placa possui um layout mais compacto que as anteriores.
 
 
 

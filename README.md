@@ -31,10 +31,27 @@ O ESP32 Power Analyzer atualmente tem na teoria as seguintes funcionalidades:
 
 Assim como qualquer equipamento de medição, o ESP32 Power Analyzer possui limites de medição para cada parâmetro elétrico. Abaixo estão os limites de medição que este projeto visa alcançar:
 
-Tensão de Linha: 0-820 Vac  
+
+### Modelo A
+O modelo A é destinado a medições em sistemas residenciais e pequenos comércios. Este modelo possui limites de tensão mais baixos.
+
+Tensão de Fase: 0-175 Vac  
+Corrente: 0-1000 A  
+Frequência: 45-65 Hz
+
+### Modelo B
+O modelo B é destinado a medições em sistemas, residenciais, comerciais e industriais de pequeno e médio porte. Este modelo possui limites de tensão intermediários.
+
+Tensão de Fase: 0-275 Vac  
+Corrente: 0-1000 A  
+Frequência: 45-65 Hz
+
+### Modelo C
+O modelo C é destinado a medições em sistemas comerciais e industriais de médio e grande porte. Este modelo possui limites de tensão mais altos.
+
 Tensão de Fase: 0-475 Vac  
 Corrente: 0-1000 A  
-Frequência: 45-65 Hz  
+Frequência: 45-65 Hz
 
 
 
@@ -46,7 +63,7 @@ O projeto está organizado da seguinte forma:
 
 - **[`docs/`](./docs/)**: Documentação do projeto, incluindo manuais de usuário, especificações técnicas e outras informações relevantes.
 
-- **[`theory/`](./theory/)**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador. (Sendo atualizado para a transformada Wavelet)
+- **[`theory/`](./theory/)**: Esta pasta contém implementações em Python das fórmulas utilizadas antes de serem integradas ao código principal do microcontrolador. (Sendo atualizado para a transformada Wavelet 🛠️)
 
 - **[`boards/`](./boards/)**: Contém informações sobre as placas desenvolvidas para o projeto e os arquivos de fabricação no formato Gerber.
 
