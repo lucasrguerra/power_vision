@@ -25,7 +25,7 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 
 
-### Placa v3.1 (THT) - 113,284 x 98,044 mm (Atual)
+### Placa v3.1 (THT) - 99,842mm de largura x 91,948mm de altura (Atual)
 
 ![Placa v3.1](./v3.1/board.png)
 
@@ -33,14 +33,15 @@ Essa placa foi desenvolvida sem a necessidade da leitura das tensões de linha. 
 
 
 
-### Placa v3.0 (THT) - 113,284 x 98,044 mm (Atual)
+### Placa v3.0 (THT) - 113,284mm de largura x 98,044mm de altura
 
 ![Placa v3.0](./v3.0/board.png)
 
 Essa placa foi desenvolvida para ser condicionar melhor os sinais de corrente e tensão, utilizando diversos buffers para isso. Ela não possui mais um circuito de seleção de níveis de corrente, operando de acordo com a resistor shunt utilizado. Ela também não possui mais um circuito de gerenciamento de bateria. Vale ressaltar que todos os resistores shunt utilizados foram recalculados para melhorar a precisão das medições e aproveitar melhor a faixa de operação do ADC do ESP32-S3. Além disso, a placa possui um layout mais compacto e organizado que as anteriores.
 
 
-### Placa v2.1 (THT) - 139,700 x 116,840 mm
+
+### Placa v2.1 (THT) - 139,700mm de largura x 116,840mm de altura
 
 ![Placa v2.1](./v2.1/board.png)
 
@@ -48,7 +49,7 @@ Essa placa foi desenvolvida para ser mais compacta e organizada que a anterior. 
 
 
 
-### Placa v2.1 (THT) - 144,780 x 101,419 mm
+### Placa v2.1 (THT) - 144,780mm de largura x 101,419mm de altura
 
 ![Placa v2.0](./v2.0/board.png)
 
@@ -56,7 +57,7 @@ Essa placa possui um menos transformadores de potencial, mas tem agora um circui
 
 
 
-### Placa v1.1 (THT) - 143,510 x 73,025 mm
+### Placa v1.1 (THT) - 143,510mm de largura x 73,025mm de altura
 
 ![Placa v1.1](./v1.1/board.png)
 
@@ -64,7 +65,7 @@ Essa placa possui o mesmo layout da anterior. Porém, foram corrigidos os nomes 
 
 
 
-### Placa v1.0 (THT) - 143,510 x 73,025 mm
+### Placa v1.0 (THT) - 143,510mm de largura x 73,025mm de altura
 
 ![Placa v1.0](./v1.0/board.png)
 
@@ -72,7 +73,7 @@ Essa placa possui um layout mais compacto e organizado que as anteriores, além 
 
 
 
-### Placa v0.7 (SMT) - 90,170 x 82,423 mm
+### Placa v0.7 (SMT) - 90,170mm de largura x 82,423mm de altura
 
 ![Placa v0.7](./v0.7/board.png)
 
@@ -80,7 +81,7 @@ Essa placa possui um layout mais compacto e organizado que a primeira versão. P
 
 
 
-### Placa v0.5 (THT) - 119,380 x 116,840 mm
+### Placa v0.5 (THT) - 119,380mm de largura x 116,840mm de altura
 
 ![Placa v0.5](./v0.5/board.png)
 
