@@ -2,6 +2,10 @@
     "files.associations": {
         "array": "cpp",
         "string": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "task.h": "c",
+        "adc_oneshot.h": "c",
+        "adc_cali.h": "c",
+        "adc_cali_scheme.h": "c"
     }
 }

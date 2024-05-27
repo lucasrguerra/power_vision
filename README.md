@@ -1,10 +1,10 @@
-# ESP32 Power Analyzer
+# Power Vision
 
 
 
 ## Descrição
 
-O ESP32 Power Analyzer é um projeto de código aberto destinado ao desenvolvimento de um analisador de qualidade da energia elétrica em tempo real utilizando um hardware de baixo custo com o microcontrolador ESP32-S3. Este analisador é capaz de medir e calcular uma variedade de parâmetros elétricos em sistemas monofásicos e trifásicos, fornecendo informações cruciais para análise e monitoramento de consumo de energia.
+O Power Vision é um projeto de código aberto destinado ao desenvolvimento de um analisador de qualidade da energia elétrica em tempo real utilizando um hardware de baixo custo com o microcontrolador ESP32-S3. Este analisador é capaz de medir e calcular uma variedade de parâmetros elétricos em sistemas monofásicos e trifásicos, fornecendo informações cruciais para análise e monitoramento de consumo de energia.
 
 O projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) do curso de Ciência da Computação da Universidade Federal Rural de Pernmabuco (UFRPE) e orientado pelo Prof. Dr. Abner Corrêa Barros. O projeto tem como objetivo principal a implementação de um analisador de energia elétrica de baixo custo e alta precisão, que possa ser utilizado em residências, empresas e indústrias para monitoramento e análise de consumo de energia.
 
@@ -12,7 +12,7 @@ O projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) do curso d
 
 ## Funcionalidades
 
-O ESP32 Power Analyzer atualmente tem na teoria as seguintes funcionalidades:
+O Power Vision atualmente tem na teoria as seguintes funcionalidades:
 
 - **Frequência (Hz)**: Medição da frequência do sistema.
 - **Tensão True RMS (Vac)**: Medição precisa da tensão eficaz do sistema.
@@ -29,7 +29,7 @@ O ESP32 Power Analyzer atualmente tem na teoria as seguintes funcionalidades:
 
 ## Limites de medição
 
-Assim como qualquer equipamento de medição, o ESP32 Power Analyzer possui limites de medição para cada parâmetro elétrico. Abaixo estão os limites de medição que este projeto visa alcançar:
+Assim como qualquer equipamento de medição, o Power Vision possui limites de medição para cada parâmetro elétrico. Abaixo estão os limites de medição que este projeto visa alcançar:
 
 
 
@@ -39,12 +39,12 @@ O dispositivo possiu uma forma versátil de calcular a frequência, se mas o int
 
 
 ### Tensão
-O dispositivo é destinado a medições em sistemas residenciais, comerciais e industriais de pequeno e médio porte, para isso, o dispositivo conta com 4 níveis possíveis de tensão, sendo eles:
+O dispositivo é destinado a medições em sistemas residenciais, comerciais e industriais de pequeno e médio porte, para isso, o dispositivo conta com 4 níveis possíveis de tensão de fase (não confundir com tensão de linha, que é a tensão entre fases), sendo eles:
 
-Nível 3 = 0-175Vac (127V)  
-Nível 2 = 0-275Vac (220V)  
-Nível 1 = 0-440Vac (380V)  
-Nível 0 = 0-475Vac (440V)  
+Nível 3 = 0-175Vac (Padrão 127V)  
+Nível 2 = 0-275Vac (Padrão 220V)  
+Nível 1 = 0-440Vac (Padrão 380V)  
+Nível 0 = 0-475Vac (Padrão 440V)  
 
 
 
@@ -88,7 +88,7 @@ Sinta-se à vontade para contribuir com o projeto! Você pode:
 
 ## Como Utilizar
 
-Para utilizar o ESP32 Power Analyzer, siga estas etapas:
+Para utilizar o Power Vision, siga estas etapas:
 
 1. Clone o repositório para o seu ambiente de desenvolvimento com o PlatformIO instalado.
 2. Instale as dependências necessárias:
@@ -102,7 +102,7 @@ Para utilizar o ESP32 Power Analyzer, siga estas etapas:
 
 ## Créditos
 
-Este projeto foi criador por [Lucas Rayan](https://github.com/lucasrguerra) (vulgo "eu") e continua sendo mantido por ele.
+Este projeto foi criador por [Lucas Rayan](https://www.linkedin.com/in/lucasrguerra/) (vulgo "eu") e continua sendo mantido por ele.
 
 
 
@@ -112,9 +112,9 @@ A minha mãe, que sempre lutou muito para que eu e minha irmã tivéssemos uma b
 
 Ao [Prof. Dr. Abner Corrêa Barros](https://www.linkedin.com/in/abner-barros-5b86409/), meu orientador, que sempre esteve disposto a ajudar e doar seu tempo e conhecimento para contribuir com o desenvolvimento do projeto.
 
-A minha grande amiga e companheira de vida, [Vitória das Dores](https://github.com/VitoriaDasDores), que sempre esteve ao meu lado me apoiando e me ajudando a superar todos os desafios.
+A minha grande amiga e companheira de vida, [Vitória das Dores](https://www.linkedin.com/in/vitoria-das-dores/), que sempre esteve ao meu lado me apoiando e me ajudando a superar todos os desafios.
 
-Ao meu grande amigo e grande Engenheiro Eletrônico, [João Pontes](https://github.com/JoaoPonTechS), que sempre esteve disposto a ajudar e ouvir minhas ideias e dúvidas.
+Ao meu grande amigo e grande Engenheiro Eletrônico, [João Pontes](https://www.linkedin.com/in/joão-victor-b-pontes-b37006116/), que sempre esteve disposto a ajudar e ouvir minhas ideias e dúvidas.
 
 
 

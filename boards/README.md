@@ -10,6 +10,7 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 ## Versões Disponíveis
 
+- **[`v3.2`](./v3.2/)**: Essa é a nona versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v3.1`](./v3.1/)**: Essa é a oitava versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v3.0`](./v3.0/)**: Essa é a sétima versão da placa e no modelo THT (Through-Hole Technology).
 - **[`v2.1`](./v2.1/)**: Essa é a sexta versão da placa e no modelo THT (Through-Hole Technology).
@@ -22,6 +23,12 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 
 ## Dados das Placas
+
+### Placa v3.2 (THT) - 94,448mm de largura x 92,710mm de altura (Atual)
+
+![Placa v3.2](./v3.2/board.png)
+
+Essa placa foi desenvolvida para ser mais compacta e organizada que a anterior. Ela não usa mais os buffers de tensão, que foram substituidos pelo mesmo amplificadores operacionais, mas agora em uma configuração de transimpedância, garantiando uma maior precisão nas medições. A placa também não necessita mais do circuito de seleção do tipo de sistema elétrico, deixando essa opção para o software. Além disso, a placa possui um layout mais compacto e organizado que as anteriores.
 
 
 

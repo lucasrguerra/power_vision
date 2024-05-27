@@ -1,12 +1,12 @@
-# Teoria do ESP32 Power Analyzer
+# Teoria do Power Vision
 
-Bem-vindo à documentação da teoria por trás do ESP32 Power Analyzer. Este documento fornece informações detalhadas sobre a matemática e os cálculos utilizados no projeto para medir e calcular parâmetros elétricos, como tensão, corrente, potência ativa, potência reativa, fator de potência e muito mais.
+Bem-vindo à documentação da teoria por trás do Power Vision. Este documento fornece informações detalhadas sobre a matemática e os cálculos utilizados no projeto para medir e calcular parâmetros elétricos, como tensão, corrente, potência ativa, potência reativa, fator de potência e muito mais.
 
 
 
 ## Matemática por trás do projeto
 
-O ESP32 Power Analyzer utiliza uma série de fórmulas e conceitos matemáticos para calcular com precisão os parâmetros elétricos do sistema. Abaixo estão alguns dados sobre os cálculos utilizados no projeto e as suas versões convertidas em funções na linguagem de programação Python.
+O Power Vision utiliza uma série de fórmulas e conceitos matemáticos para calcular com precisão os parâmetros elétricos do sistema. Abaixo estão alguns dados sobre os cálculos utilizados no projeto e as suas versões convertidas em funções na linguagem de programação Python.
 
 _**Nota:** As fórmulas e cálculos a utilizados consideram que você tenha a mesma quantidade de amostras da tensão e da corrente. E que essa quantidade de amostras sejam um multiplo de 2, para ficilitar a utilização da FFT._
 
