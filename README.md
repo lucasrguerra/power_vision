@@ -1,5 +1,6 @@
 # Power Vision
 
+![Power Vision](./logo.png)
 
 
 ## Descrição
@@ -41,23 +42,23 @@ O dispositivo possiu uma forma versátil de calcular a frequência, se mas o int
 ### Tensão
 O dispositivo é destinado a medições em sistemas residenciais, comerciais e industriais de pequeno e médio porte, para isso, o dispositivo conta com 4 níveis possíveis de tensão de fase (não confundir com tensão de linha, que é a tensão entre fases), sendo eles:
 
-Nível 3 = 0-175Vac (Padrão 127V)  
-Nível 2 = 0-275Vac (Padrão 220V)  
-Nível 1 = 0-440Vac (Padrão 380V)  
 Nível 0 = 0-475Vac (Padrão 440V)  
+Nível 1 = 0-440Vac (Padrão 380V)  
+Nível 2 = 0-275Vac (Padrão 220V)  
+Nível 3 = 0-175Vac (Padrão 127V)  
 
 
 
 ### Corrente
 O dispositivo é destinado a medições em sistemas residenciais, comerciais e industriais de pequeno e médio porte, para isso, o dispositivo conta com 7 níveis possíveis de corrente, sendo eles:
 
-Nível 6 = Até 80A
-Nível 5 = Até 120A
-Nível 4 = Até 200A
-Nível 3 = Até 300A 
-Nível 2 = Até 500A
-Nível 1 = Até 750A 
 Nível 0 = Até 1000A  
+Nível 1 = Até 750A  
+Nível 2 = Até 500A  
+Nível 3 = Até 300A  
+Nível 4 = Até 200A  
+Nível 5 = Até 120A  
+Nível 6 = Até 80A  
 
 
 
