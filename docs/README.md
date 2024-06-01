@@ -38,26 +38,27 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 ## Componentes utilizados (Considerando um sistema com 3 fases e 1 neutro)
 
 - **1x Microcontrolador - ESP32-S3 DevKitC**
-- **4x Amplificador Operacional - TL082**
+- **8x Amplificador Operacional - TL082**
+- **8x Socket DIP-8**
 - **4x Tranformador de corrente (não invasivo) - 3000:1 (Até 1000A)**
 - **3x Tranformador de potencial - ZMPT101B**
 - **1x Regulador de Tensão - LM1117T-3.3**
-- **1x Fonte de Tensão - HLK-10M24**
+- **1x Fonte de Tensão - HLK-5M12**
 - **6x Terminal de parafuso - 2 Pinos P5.08mm**
 - **1x Microswitch - SS-12D00G4**
 - **1x Capacitor de Tântalo 35v 47uF**
 - **1x Capacitor de Tântalo 16v 100uF**
 - **14x Diodo Zener 3V3 - IN4733A**
-- **2x Pin Socket 2.54mm (01x22P)**
-- **1x Pin Header 2.54mm (01x06P)**
-- **1x Pin Header 2.54mm (01x04P)**
-- **2x Pin Header 2.54mm (01x03P)**
 - **1x Pin Header 2.54mm (01x01P)**
-- **4x Socket DIP-8**
-- **4x Resistor (Rcurr) - 1/4W 1%**
-- **3x Resistor (RPvolt) - 1/4W 1%**
-- **3x Resistor (RSvolt) - 1/4W 1%**
-- **2x Resistor 10kΩ - 1/4W 1%**
+- **2x Pin Header 2.54mm (01x03P)**
+- **1x Pin Header 2.54mm (01x04P)**
+- **1x Pin Header 2.54mm (01x06P)**
+- **2x Pin Socket 2.54mm (01x22P)**
+- **4x Resistor (Rcurr) - 1/4W 0.1%**
+- **3x Resistor (RPvolt) - 1/4W 0.1%**
+- **3x Resistor (RSvolt) - 1/4W 0.1%**
+- **2x Resistor 10kΩ - 1/4W 0.1%**
+- **7x Resistor 200Ω - 1/4W 1%**
 - **1x Cartão microSD - Módulo de Cartão SD (SPI) - Opcional**
 
 
@@ -81,13 +82,13 @@ _**Nota:** Lembre-se de mudar o valor da variável `SYSTEM_TYPE` no código do p
 
 | Corrente Máxima (A) | Resistência (Ω) | Valor da Variável (CURRENT_TYPE) |
 | --- | --- | --- |
-| 1000 | 3.3 | 0 |
-| 750 | 4.3 | 1 |
-| 500 | 6.8 | 2 |
+| 1000 | 3 | 0 |
+| 750 | 3.9 | 1 |
+| 500 | 5.6 | 2 |
 | 300 | 10 | 3 |
 | 200 | 15 | 4 |
-| 120 | 27 | 5 |
-| 80 | 43 | 6 |
+| 120 | 24 | 5 |
+| 80 | 36 | 6 |
 
 _**Nota:** Lembre-se de mudar o valor da variável `CURRENT_TYPE` no código do projeto para o valor correspondente na tabela acima_
 
@@ -97,10 +98,10 @@ _**Nota:** Lembre-se de mudar o valor da variável `CURRENT_TYPE` no código do 
 
 | Tensão de Operação (Vac) | Resistência do Primário (Ω) | Resistência do Secundário (Ω) | Valor da Variável (VOLTAGE_TYPE) |
 | --- | --- | --- | --- |
-| 440 | 270k | 510 | 0 |
-| 380 | 270k | 560 | 1 |
-| 220 | 180k | 560 | 2 |
-| 127 | 100k | 510 | 3 |
+| 440 | 300k | 620 | 0 |
+| 380 | 270k | 620 | 1 |
+| 220 | 180k | 620 | 2 |
+| 127 | 120k | 680 | 3 |
 
 _**Nota:** Lembre-se de mudar o valor da variável `VOLTAGE_TYPE` no código do projeto para o valor correspondente na tabela acima_
 

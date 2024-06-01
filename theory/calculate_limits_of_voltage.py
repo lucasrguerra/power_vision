@@ -1,6 +1,6 @@
 input_ac_voltage = 475
-input_load_resistor = 270000
-secondary_resistor = 560
+input_load_resistor = 300000
+secondary_resistor = 620
 raise_of_two = 2 ** 0.5
 
 

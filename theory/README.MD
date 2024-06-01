@@ -34,10 +34,10 @@ _**Nota:** Os valores de resistência foram calculados considerando o transforma
 
 | Tensão do Sistema | Tensão Máxima do Sistema | Corrente no TP | Resistência RPvolt (±1%) | Tensão Pico a Pico no Secundário | Resistência RSvolt (±1%) | Relação da Transformação |
 | --- | --- | --- | --- | --- | --- | --- |
-| 440Vac | 475Vac | 0.00176A | 270kΩ | 2.78652V | 560Ω | 482.14286 |
+| 440Vac | 475Vac | 0.00158A | 300kΩ | 2.77657V | 620Ω | 483.87097 |
 | 380Vac | 440Vac | 0.00163A | 270kΩ | 2.85776V | 620Ω | 435.48387 |
 | 220Vac | 275Vac | 0.00153A | 180kΩ | 2.67915V | 620Ω | 290.32258 |
-| 127Vac | 175Vac | 0.00175A | 100kΩ | 2.77186V | 560Ω | 178.57143 |
+| 127Vac | 175Vac | 0.00146A | 120kΩ | 2.80486V | 680Ω | 176.47059 |
 
 
 

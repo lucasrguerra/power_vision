@@ -8,7 +8,7 @@
   (title_block
     (title "Energy Guardian V3.3 PCI")
     (date "01/06/2024")
-    (rev "1.0")
+    (rev "1.1")
     (company "linkedin.com/in/lucasrguerra")
     (comment 1 "github.com/lucasrguerra/power_vision")
   )
@@ -716,7 +716,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f64410c0-b2ba-47d5-b808-0a4c1bcf02f7)
     )
-    (fp_text value "1MΩ" (at 5.08 2.37 90) (layer "F.Fab") hide
+    (fp_text value "200Ω" (at 5.08 2.37 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f95e2a92-6827-45f7-a0ce-f27ad6989826)
     )
@@ -1194,7 +1194,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3f791f58-e3a8-4382-98be-9a5af0ac2d76)
     )
-    (fp_text value "1MΩ" (at 5.08 2.37 90) (layer "F.Fab") hide
+    (fp_text value "200Ω" (at 5.08 2.37 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8de91255-afb5-4bf7-a850-7adb9f8d93ea)
     )
@@ -5018,7 +5018,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 33bd5146-123f-4b8c-ae67-d7881dbbfe50)
     )
-    (fp_text value "1MΩ" (at 5.08 2.37 90) (layer "F.Fab") hide
+    (fp_text value "200Ω" (at 5.08 2.37 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4668ae54-7670-4fd7-8032-542d4cadbe99)
     )
@@ -5956,7 +5956,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9e8bf091-75ba-4faf-80dc-2b1877a6c4bc)
     )
-    (fp_text value "1MΩ" (at 5.08 2.37 90) (layer "F.Fab") hide
+    (fp_text value "200Ω" (at 5.08 2.37 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 62808b7a-98e6-4b4f-877f-639257556d38)
     )
@@ -6088,7 +6088,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 72245414-3e9c-4af0-bd2a-d58741c31efa)
     )
-    (fp_text value "1MΩ" (at 5.08 2.37 90) (layer "F.Fab") hide
+    (fp_text value "200Ω" (at 5.08 2.37 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e662f04e-26d9-4ff0-b8ac-4c262c2c4e83)
     )
@@ -6590,7 +6590,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 448c83b7-3ea4-4b7e-8645-156c06b0deed)
     )
-    (fp_text value "1MΩ" (at 5.08 2.37 90) (layer "F.Fab") hide
+    (fp_text value "200Ω" (at 5.08 2.37 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b183ffb4-e4e1-4a4d-b69e-4d7ab09c2033)
     )
@@ -7110,7 +7110,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8b748220-a1f8-420b-b160-0ac5b336bf1c)
     )
-    (fp_text value "1MΩ" (at 5.08 2.37 90) (layer "F.Fab") hide
+    (fp_text value "200Ω" (at 5.08 2.37 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 65ef360a-698e-4f9c-a904-3c010a4209a1)
     )

@@ -99,11 +99,11 @@ void app_main(void) {
   }
 
   switch (VOLTAGE_TYPE) {
-    case 0: VOLTAGE_CORRECTION_FACTOR = 482.14286; break;
+    case 0: VOLTAGE_CORRECTION_FACTOR = 483.87097; break;
     case 1: VOLTAGE_CORRECTION_FACTOR = 435.48387; break;
     case 2: VOLTAGE_CORRECTION_FACTOR = 290.32258; break;
-    case 3: VOLTAGE_CORRECTION_FACTOR = 178.57143; break;
-    default: VOLTAGE_CORRECTION_FACTOR = 482.14286; break;
+    case 3: VOLTAGE_CORRECTION_FACTOR = 176.47059; break;
+    default: VOLTAGE_CORRECTION_FACTOR = 483.87097; break;
   }
 
   // Create FreeRTOS Task
