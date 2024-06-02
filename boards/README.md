@@ -29,7 +29,7 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 ![Placa v3.3](./v3.3/board.png)
 
-Essa placa foi desenvolvida mantendo o design compacto e organizado da versão anterior. Ela possui além dos circuitos de transimpedância, os buffers de tensão, garantindo uma maior precisão nas medições. A placa também possui resistores de 200Ω para aumentar a estabilidade dos buffers de tensão e limitar a corrente que passa pelos diodos zener de proteção. Além disso, a placa é a primeira a possuir um plano de terra, garantindo uma melhor dissipação de calor e reduzindo a interferência eletromagnética.
+Essa placa foi desenvolvida mantendo o design compacto e organizado da versão anterior. Ela possui além dos circuitos de transimpedância, os buffers de tensão, garantindo uma maior precisão nas medições. A placa também possui resistores de 50Ω para aumentar a estabilidade dos sinais vindos dos buffers de tensão e limitar a corrente que passa pelos diodos zener de proteção. Além disso, a placa é a primeira a possuir um plano de terra, garantindo uma melhor dissipação de calor e reduzindo a interferência eletromagnética.
 
 
 

@@ -48,7 +48,7 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 - **1x Microswitch - SS-12D00G4**
 - **1x Capacitor de Tântalo 35v 47uF**
 - **1x Capacitor de Tântalo 16v 100uF**
-- **14x Diodo Zener 3V3 - IN4733A**
+- **14x Diodo Zener 3V3 1W - IN4733A**
 - **1x Pin Header 2.54mm (01x01P)**
 - **2x Pin Header 2.54mm (01x03P)**
 - **1x Pin Header 2.54mm (01x04P)**
@@ -58,7 +58,7 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 - **3x Resistor (RPvolt) - 1/4W 0.1%**
 - **3x Resistor (RSvolt) - 1/4W 0.1%**
 - **2x Resistor 10kΩ - 1/4W 0.1%**
-- **7x Resistor 200Ω - 1/4W 1%**
+- **7x Resistor 50Ω - 1/4W 1%**
 - **1x Cartão microSD - Módulo de Cartão SD (SPI) - Opcional**
 
 
