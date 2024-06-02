@@ -12,7 +12,7 @@ Para calcular a corrente do sistema, é necessário utilizar resistores de baixa
 
 _**Nota:** Os valores de resistência foram calculados considerando um transformador de corrente com uma relação de 3000:1._
 
-| Corrente Máxima do Sistema | Corrente no Secundário | Tensão Pico a Pico no Secundário | Resistência (±1%) | Relação da Transformação |
+| Corrente Máxima do Sistema | Corrente no Secundário | Tensão Pico a Pico no Secundário | Resistência (±0.1%) | Relação da Transformação |
 | --- | --- | --- | --- | --- |
 | 1000A | 0.33333A | 2.82843V | 3Ω | 1000 |
 | 750A | 0.25A | 2.75772V | 3.9Ω | 769.23077 |
@@ -32,7 +32,7 @@ _**Nota:** Os valores de resistência foram calculados considerando o transforma
 
 #### Resistores para o Primário (RPvolt) e Secundário (RSvolt) do Transformador
 
-| Tensão do Sistema | Tensão Máxima do Sistema | Corrente no TP | Resistência RPvolt (±1%) | Tensão Pico a Pico no Secundário | Resistência RSvolt (±1%) | Relação da Transformação |
+| Tensão do Sistema | Tensão Máxima do Sistema | Corrente no Transformador | Resistência RPvolt (±0.1%) | Tensão Pico a Pico no Secundário | Resistência RSvolt (±0.1%) | Relação da Transformação |
 | --- | --- | --- | --- | --- | --- | --- |
 | 440Vac | 475Vac | 0.00158A | 300kΩ | 2.77657V | 620Ω | 483.87097 |
 | 380Vac | 440Vac | 0.00163A | 270kΩ | 2.85776V | 620Ω | 435.48387 |
