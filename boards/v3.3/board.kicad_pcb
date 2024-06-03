@@ -6531,7 +6531,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5c8c3657-1776-4841-9647-06c100c96409)
     )
-    (fp_text user "Cn Cc Cb Ca" (at -2.032 3.811) (layer "F.SilkS")
+    (fp_text user "Cn Cc Cb Ca" (at -2.54 3.811) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.2)))
       (tstamp 816d3b98-83b6-49b3-96bc-0d4b450754db)
     )
@@ -6968,7 +6968,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp cf5d385b-1ab2-4394-ade3-1c13b737a461)
-    (at 161.29 56.896)
+    (at 161.29 56.896 -90)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (property "Sheetfile" "board.kicad_sch")
@@ -6977,15 +6977,15 @@
     (property "ki_keywords" "connector")
     (path "/7432faab-9a97-43de-92da-99a0de72cb24")
     (attr through_hole)
-    (fp_text reference "P2" (at 0 -2.33) (layer "F.Fab") hide
+    (fp_text reference "P2" (at 0 -2.33 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b26f645d-c414-4e05-bfd7-a66655c2b25b)
     )
-    (fp_text value "Pin Header" (at 0 2.33) (layer "F.Fab") hide
+    (fp_text value "Pin Header" (at 0 2.33 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 883d1699-ab1e-40d4-9c88-8a9394ef2e30)
     )
-    (fp_text user "Vref" (at 0 -2.54 180) (layer "F.SilkS")
+    (fp_text user "Vref" (at -2.54 0 -180) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.2)))
       (tstamp 688e42bb-1e5d-4673-b316-eb88cbcd3c47)
     )
@@ -7019,7 +7019,7 @@
       (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 4b1f106b-3b08-478d-8ee4-2134e6caeac4))
     (fp_line (start 1.27 1.27) (end -1.27 1.27)
       (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 78ff1df4-4217-4c74-8704-c293b61fbd43))
-    (pad "1" thru_hole oval (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
+    (pad "1" thru_hole oval (at 0 0 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 15 "TC A-1") (pinfunction "Pin_1") (pintype "passive") (tstamp d14d494f-f1df-4b14-b53f-9677c1b276b0))
     (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl"
       (offset (xyz 0 0 0))
