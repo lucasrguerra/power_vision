@@ -8,25 +8,25 @@ Bem-vindo à documentação da teoria por trás do Power Vision. Este documento 
 
 ### Resistores para a corrente (Rcurr)
 
-Para calcular a corrente do sistema, é necessário utilizar resistores de baixa resistência, e essa resistência é calculada levando em consideração a tensão máxima que pode ser medida pelo microcontrolador com uma margem de erro, o que para esse caso significa dizer que tensão pico a pico no secundário do transformador de corrente precisa ser o valor mais próximo e inferior a 2.9V. Para simplificar os cálculos, o arquivo [calculate_limits_of_current.py](./calculate_limits_of_current.py) foi criado para calcular os resistores que devem ser utilizados.
+Para calcular a corrente do sistema, é necessário utilizar resistores de baixa resistência, e essa resistência é calculada levando em consideração a tensão máxima que pode ser medida pelo microcontrolador com uma margem de erro, o que para esse caso significa dizer que tensão pico a pico no secundário do transformador de corrente precisa ser o valor mais próximo e inferior a 2.9V. Para simplificar os cálculos, o Jupyter Notebook [calculate_limits_of_current.ipynb](./calculate_limits_of_current.ipynb) foi criado para calcular os parâmetros de acordo com os resistores utilizados.
 
 _**Nota:** Os valores de resistência foram calculados considerando um transformador de corrente com uma relação de 3000:1._
 
 | Corrente Máxima do Sistema | Corrente no Secundário | Tensão Pico a Pico no Secundário | Resistência (±0.1%) | Relação da Transformação |
 | --- | --- | --- | --- | --- |
 | 1000A | 0.33333A | 2.82843V | 3Ω | 1000 |
-| 750A | 0.25A | 2.75772V | 3.9Ω | 769.23077 |
-| 500A | 0.16667A | 2.63987V | 5.6Ω | 535.71429 |
+| 750A | 0.25A | 2.75772V | 3.9Ω | 769.231 |
+| 500A | 0.16667A | 2.63987V | 5.6Ω | 535.714 |
 | 300A | 0.1A | 2.82843V | 10Ω | 300 |
 | 200A | 0.06667A | 2.82843V | 15Ω | 200 |
 | 120A | 0.04A | 2.71529V | 24Ω | 125 |
-| 80A | 0.02667A | 2.71529V | 36Ω | 83.33333 |
+| 80A | 0.02667A | 2.71529V | 36Ω | 83.333 |
 
 
 
 ### Resistores para a tensão (Rvolt)
 
-Para calcular a tensão do sistema, é necessário utilizar resistores de baixa e alta resistência, e essa resistência é calculada levando em consideração a tensão máxima que pode ser medida pelo microcontrolador com uma margem de erro, o que para esse caso significa dizer que tensão pico a pico no secundário do transformador de tensão precisa ser o valor mais próximo e inferior a 2.9V, e que permita a passagem de corrente próxima a 1.5mA, respeitando os limites do transfomador utilizado. Para simplificar os cálculos, o arquivo [calculate_limits_of_voltage.py](./calculate_limits_of_voltage.py) foi criado para calcular os resistores que devem ser utilizados.
+Para calcular a tensão do sistema, é necessário utilizar resistores de baixa e alta resistência, e essa resistência é calculada levando em consideração a tensão máxima que pode ser medida pelo microcontrolador com uma margem de erro, o que para esse caso significa dizer que tensão pico a pico no secundário do transformador de tensão precisa ser o valor mais próximo e inferior a 2.9V, e que permita a passagem de corrente próxima a 1.5mA, respeitando os limites do transfomador utilizado. Para simplificar os cálculos, o Jupyter Notebook [calculate_limits_of_voltage.ipynb](./calculate_limits_of_voltage.ipynb) foi criado para calcular os parâmetros de acordo com os resistores utilizados.
 
 _**Nota:** Os valores de resistência foram calculados considerando o transformador de corrente ZMPT101B com uma relação de transformação de 2mA:2mA._
 
@@ -34,10 +34,10 @@ _**Nota:** Os valores de resistência foram calculados considerando o transforma
 
 | Tensão do Sistema | Tensão Máxima do Sistema | Corrente no Transformador | Resistência RPvolt (±0.1%) | Tensão Pico a Pico no Secundário | Resistência RSvolt (±0.1%) | Relação da Transformação |
 | --- | --- | --- | --- | --- | --- | --- |
-| 440Vac | 475Vac | 0.00158A | 300kΩ | 2.77657V | 620Ω | 483.87097 |
-| 380Vac | 440Vac | 0.00163A | 270kΩ | 2.85776V | 620Ω | 435.48387 |
-| 220Vac | 275Vac | 0.00153A | 180kΩ | 2.67915V | 620Ω | 290.32258 |
-| 127Vac | 175Vac | 0.00146A | 120kΩ | 2.80486V | 680Ω | 176.47059 |
+| 440Vac | 475Vac | 0.00158A | 300kΩ | 2.77657V | 620Ω | 483.871 |
+| 380Vac | 440Vac | 0.00163A | 270kΩ | 2.85776V | 620Ω | 435.484 |
+| 220Vac | 275Vac | 0.00153A | 180kΩ | 2.67915V | 620Ω | 290.323 |
+| 127Vac | 175Vac | 0.00146A | 120kΩ | 2.80486V | 680Ω | 176.471 |
 
 
 
