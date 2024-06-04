@@ -54,9 +54,9 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 - **1x Pin Header 2.54mm (01x04P)**
 - **1x Pin Header 2.54mm (01x06P)**
 - **2x Pin Socket 2.54mm (01x22P)**
-- **4x Resistor (Rcurr) - 1/4W 0.1%**
-- **3x Resistor (RPvolt) - 1/4W 0.1%**
-- **3x Resistor (RSvolt) - 1/4W 0.1%**
+- **4x Resistor (Rcurr) - 1/4W 1%**
+- **3x Resistor (RPvolt) - 1/4W 1%**
+- **3x Resistor (RSvolt) - 1/4W 1%**
 - **2x Resistor 10kΩ - 1/4W 0.1%**
 - **7x Resistor 50Ω - 1/4W 1%**
 - **1x Cartão microSD - Módulo de Cartão SD (SPI) - Opcional**
