@@ -5153,7 +5153,7 @@
   (symbol (lib_id "Regulator_Linear:AMS1117-3.3") (at 243.84 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ad0ebc53-50b0-421b-922a-ab77f927e22e)
-    (property "Reference" "PS2" (at 243.84 144.78 0)
+    (property "Reference" "PS1" (at 243.84 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AMS1117-3.3" (at 243.84 147.32 0)
@@ -5171,7 +5171,7 @@
     (instances
       (project "board"
         (path "/7fdecbff-7204-4ee7-8cff-285fbd7a00a8"
-          (reference "PS2") (unit 1)
+          (reference "PS1") (unit 1)
         )
       )
     )

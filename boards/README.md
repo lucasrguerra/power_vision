@@ -31,7 +31,7 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 ![Placa v4.0](./v4.0/board.png)
 
-Essa placa foi desenvolvida com um design mais compacto e organizado da versão anterior. Ela possui apenas 2 camadas de cobre para manter o baixo custo. Essa placa pussui ainda mais cuidado com a simetria das trilhas diferenciais para garantir o menor erro de impedância o possível nas medições. Além disso, a possui o plano terra em ambas as camadas, garantindo uma melhor dissipação de calor e reduzindo a interferência eletromagnética.
+Essa placa foi desenvolvida com um design mais compacto e organizado da versão anterior. Ela possui apenas 2 camadas de cobre para manter o baixo custo. Essa placa pussui ainda mais cuidado com a simetria das trilhas diferenciais para garantir o menor erro de impedância o possível nas medições. Além disso, a possui o plano terra em ambas as camadas, garantindo uma melhor dissipação de calor e reduzindo a interferência eletromagnética. Por fim, a fonte de alimentação interna foi removida, pois ela era um limitante de tensão de operação do circuito.
 
 
 
