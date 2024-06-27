@@ -84,7 +84,12 @@ void app_main(void) {
   uart_driver_install(UART_NUM_0, 256, 0, 0, NULL, 0);
 
   // Calibrate ADC
-  esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTENUATION, ADC_WIDTH, ADC_DEFAULT_VREF, &cali_config);
+  if (esp_adc_cal_check_efuse(ADC_UNIT_1, ADC_ATTEN_DB_12, ADC_WIDTH) == ESP_OK) {
+    esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_DB_12, ADC_WIDTH, ADC_DEFAULT_VREF, &cali_config);
+  } else {
+    printf("ADC Calibration failed\n");
+    while (true);
+  }
 
   // Set Correction Factors
   switch (CURRENT_TYPE) {
@@ -132,5 +137,7 @@ void vTaskHello(void *pvParameters) {
  * @return: The sample value
  */
 uint16_t get_wave_sample(uint8_t channel) {
-  return esp_adc_cal_raw_to_voltage(adc1_get_raw(channel), &cali_config);
+  uint16_t sample;
+  esp_adc_cal_get_voltage(channel, &cali_config, &sample);
+  return sample;
 }

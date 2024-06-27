@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js",
+    "dev": "nodemon api.js",
+    "doc": "apidoc -i controllers/ -o docs/"
+  },
+  "keywords": [],
+  "author": "lucasrguerra",
+  "license": "MIT License",
+  "dependencies": {
+    "apidoc": "^1.2.0",
+    "bcryptjs": "^2.4.3",
+    "check-password-strength": "^2.0.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-formidable": "^1.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.4"
+  },
+  "devDependencies": {
+    "@types/apidoc": "^0.50.3",
+    "nodemon": "^3.1.4"
+  }
+}

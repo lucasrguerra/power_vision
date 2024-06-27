@@ -1,0 +1,19 @@
+Id,Designador,Footprint,Quantidade,Designação,Fornecedor e referência
+1,"AMP3,AMP8,AMP6,AMP4,AMP7,AMP5,AMP2,AMP1",SO-8_3.9x4.9mm_P1.27mm,8,TL082,TL082C
+2,"DZ14,DZ2,DZ13,DZ6,DZ5,DZ11,DZ3,DZ12,DZ9,DZ7,DZ4,DZ1,DZ8,DZ10",D_MELF,14,3.3V,Diode Zener ZM4728 3.3V
+3,"R9,R11,R10,R12",R_1210_3225Metric,4,Rcurr,Resistor 24Ω 1% 1210
+4,"TP2,TP1,TP3",XFMR_ZMPT101B,3,ZMPT101B,ZMPT101B
+5,"R7,R6,R8",R_1210_3225Metric,3,RSvolt,Resistor 620Ω 1% 1210
+6,"R16,R17,R18,R19,R15,R13,R14",R_1210_3225Metric,7,50Ω,Resistor 50Ω 1% 1210
+7,MCU1,XCVR_ESP32-S3-WROOM-2-N32R8V,1,ESP32-S3-WROOM-1-N16R8,ESP32-S3-WROOM-1-N16R8
+8,"J7,J4,J3,J6,J2,J5,J1",TerminalBlock_bornier-2_P5.08mm,7,KF301-2P,KF301-2P
+9,"R4,R3,R5",R_1210_3225Metric,3,RPvolt,Resistor 180kΩ 1% 1210
+10,"P1,P4",PinHeader_1x03_P2.54mm_Vertical,2,Pin Header,Pin Header 1x03 2.54mm
+11,"R2,R1",R_1210_3225Metric,2,10kΩ,Resistor 10kΩ 0.1% 1210
+12,SW1,PinHeader_1x03_P2.54mm_Vertical,1,SS-12D00G 4mm,SS-12D00G 4mm Switch
+13,C2,CP_EIA-3528-15_AVX-H,1,10V 100µF,Tantalum Capacitor 10V 100µF 3528
+14,P5,PinHeader_1x06_P2.54mm_Vertical,1,Pin Header,Pin Header 1x06 2.54mm
+15,P3,PinHeader_1x04_P2.54mm_Vertical,1,Pin Header,Pin Header 1x04 2.54mm
+16,C1,CP_EIA-6032-20_AVX-F,1,25V 47µF,Tantalum Capacitor 25V 47µF 6032
+17,P2,PinHeader_1x01_P2.54mm_Vertical,1,Pin Header,Pin Header 1x01 2.54mm
+18,PS2,SOT-223-3_TabPin2,1,AMS1117-3.3,AMS1117 1A Fixed 3.3V

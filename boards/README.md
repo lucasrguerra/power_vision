@@ -10,22 +10,40 @@ Nesta pasta estão todos os arquivos das placas desenvolvidas para este projeto 
 
 ## Versões Disponíveis
 
-- **[`v3.3`](./v3.3/)**: Essa é a décima versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v3.2`](./v3.2/)**: Essa é a nona versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v3.1`](./v3.1/)**: Essa é a oitava versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v3.0`](./v3.0/)**: Essa é a sétima versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v2.1`](./v2.1/)**: Essa é a sexta versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v2.0`](./v2.0/)**: Essa é a quinta versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v1.1`](./v1.1/)**: Essa é a quarta versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v1.0`](./v1.0/)**: Essa é a terceira versão da placa e no modelo THT (Through-Hole Technology).
-- **[`v0.7`](./v0.7/)**: Essa é a segunda versão da placa e no modelo SMT (Surface-Mount Technology).
-- **[`v0.5`](./v0.5/)**: Essa é a primeira versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v4.0`](./v4.0/)**: Essa é a 12ª versão da placa e no modelo SMT (Surface-Mount Technology).
+- **[`v3.4`](./v3.4/)**: Essa é a 11ª versão da placa e no modelo SMT (Surface-Mount Technology).
+- **[`v3.3`](./v3.3/)**: Essa é a 10ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v3.2`](./v3.2/)**: Essa é a 9ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v3.1`](./v3.1/)**: Essa é a 8ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v3.0`](./v3.0/)**: Essa é a 7ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v2.1`](./v2.1/)**: Essa é a 6ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v2.0`](./v2.0/)**: Essa é a 5ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v1.1`](./v1.1/)**: Essa é a 4ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v1.0`](./v1.0/)**: Essa é a 3ª versão da placa e no modelo THT (Through-Hole Technology).
+- **[`v0.7`](./v0.7/)**: Essa é a 2ª versão da placa e no modelo SMT (Surface-Mount Technology).
+- **[`v0.5`](./v0.5/)**: Essa é a 1ª versão da placa e no modelo THT (Through-Hole Technology).
 
 
 
 ## Dados das Placas
 
-### Placa v3.3 (THT) - 96,012mm de largura x 91,440mm de altura (Atual)
+### Placa v4.0 (SMT) - 75,438mm de largura x 74,930mm de altura
+
+![Placa v4.0](./v4.0/board.png)
+
+Essa placa foi desenvolvida com um design mais compacto e organizado da versão anterior. Ela possui apenas 2 camadas de cobre para manter o baixo custo. Essa placa pussui ainda mais cuidado com a simetria das trilhas diferenciais para garantir o menor erro de impedância o possível nas medições. Além disso, a possui o plano terra em ambas as camadas, garantindo uma melhor dissipação de calor e reduzindo a interferência eletromagnética.
+
+
+
+### Placa v3.4 (SMT) - 77,6358mm de largura x 89,3210mm de altura
+
+![Placa v3.4](./v3.4/board.png)
+
+Essa placa foi desenvolvida com um design mais compacto e organizado da versão anterior. Ela possui 4 camadas de cobre, tornando mínima a impedância do GND e da tensão de referência para as medições. Essa placa também possui um cuidado com a simetria das trilhas diferenciais para garantir o menor erro de impedância o possível nas medições. Além disso, a possui uma camada dedicada ao plano terra, garantindo uma melhor dissipação de calor e reduzindo a interferência eletromagnética.
+
+
+
+### Placa v3.3 (THT) - 96,012mm de largura x 91,440mm de altura (Atual THT)
 
 ![Placa v3.3](./v3.3/board.png)
 

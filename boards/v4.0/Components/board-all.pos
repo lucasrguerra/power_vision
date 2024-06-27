@@ -1,0 +1,67 @@
+### Footprint positions - created on Wed Jun 26 21:01:49 2024 ###
+### Printed by KiCad version 7.0.10
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                     Package                               PosX       PosY       Rot  Side
+AMP1      TL082                   SO-8_3.9x4.9mm_P1.27mm            143.0370   -69.7230    0.0000  top
+AMP2      TL082                   SO-8_3.9x4.9mm_P1.27mm            143.0370   -87.1220    0.0000  top
+AMP3      TL082                   SO-8_3.9x4.9mm_P1.27mm            143.0370  -104.6480    0.0000  top
+AMP4      TL082                   SO-8_3.9x4.9mm_P1.27mm            153.4160  -108.9310   90.0000  top
+AMP5      TL082                   SO-8_3.9x4.9mm_P1.27mm            163.5760  -108.9310   90.0000  top
+AMP6      TL082                   SO-8_3.9x4.9mm_P1.27mm            173.7360  -108.9310   90.0000  top
+AMP7      TL082                   SO-8_3.9x4.9mm_P1.27mm            183.8960  -108.9310   90.0000  top
+AMP8      TL082                   SO-8_3.9x4.9mm_P1.27mm            144.9070   -57.9120    0.0000  top
+C1        25V_47µF               CP_EIA-6032-20_AVX-F              129.2860   -56.9700   90.0000  top
+C2        10V_100µF              CP_EIA-3528-15_AVX-H              150.4950   -57.6580  -90.0000  top
+DZ1       3.3V                    D_MELF                            184.2770   -77.9780  180.0000  top
+DZ2       3.3V                    D_MELF                            176.4210   -77.9780  180.0000  top
+DZ3       3.3V                    D_MELF                            184.2770   -81.5340  180.0000  top
+DZ4       3.3V                    D_MELF                            176.4210   -81.5340  180.0000  top
+DZ5       3.3V                    D_MELF                            184.2640   -85.0900  180.0000  top
+DZ6       3.3V                    D_MELF                            176.4160   -85.0900  180.0000  top
+DZ7       3.3V                    D_MELF                            184.2770   -99.3140  180.0000  top
+DZ8       3.3V                    D_MELF                            176.4160   -99.3140  180.0000  top
+DZ9       3.3V                    D_MELF                            184.2770   -95.7580  180.0000  top
+DZ10      3.3V                    D_MELF                            176.4160   -95.7580  180.0000  top
+DZ11      3.3V                    D_MELF                            184.2770   -92.2020  180.0000  top
+DZ12      3.3V                    D_MELF                            176.4160   -92.2020  180.0000  top
+DZ13      3.3V                    D_MELF                            184.2770   -88.6460  180.0000  top
+DZ14      3.3V                    D_MELF                            176.4160   -88.6460  180.0000  top
+J1        KF301-2P                TerminalBlock_bornier-2_P5.08mm   120.9290   -52.5780  -90.0000  top
+J2        KF301-2P                TerminalBlock_bornier-2_P5.08mm   127.5080  -117.4750    0.0000  top
+J3        KF301-2P                TerminalBlock_bornier-2_P5.08mm   117.3480  -117.4750    0.0000  top
+J4        KF301-2P                TerminalBlock_bornier-2_P5.08mm   150.8760  -117.4750    0.0000  top
+J5        KF301-2P                TerminalBlock_bornier-2_P5.08mm   161.0360  -117.4750    0.0000  top
+J6        KF301-2P                TerminalBlock_bornier-2_P5.08mm   171.1960  -117.4750    0.0000  top
+J7        KF301-2P                TerminalBlock_bornier-2_P5.08mm   181.3560  -117.4750    0.0000  top
+MCU1      ESP32-S3-WROOM-1-N16R8  XCVR_ESP32-S3-WROOM-2-N32R8V      159.6260   -87.9580  180.0000  top
+P1        Pin_Header              PinHeader_1x03_P2.54mm_Vertical   151.6250   -71.9020   90.0000  top
+P2        Pin_Header              PinHeader_1x01_P2.54mm_Vertical   178.6890   -62.3570   90.0000  top
+P3        Pin_Header              PinHeader_1x04_P2.54mm_Vertical   174.7620   -72.7710   90.0000  top
+P4        Pin_Header              PinHeader_1x03_P2.54mm_Vertical   176.0220   -67.5640   90.0000  top
+P5        Pin_Header              PinHeader_1x06_P2.54mm_Vertical   172.8220   -62.3570  -90.0000  top
+PS2       AMS1117-3.3             SOT-223-3_TabPin2                 136.0420   -57.1360    0.0000  top
+R1        10kΩ                   R_1210_3225Metric                 146.6850   -52.7050  -90.0000  top
+R2        10kΩ                   R_1210_3225Metric                 149.9870   -52.7050   90.0000  top
+R3        RPvolt                  R_1210_3225Metric                 116.3320   -64.8355  -90.0000  top
+R4        RPvolt                  R_1210_3225Metric                 116.3320   -82.2345  -90.0000  top
+R5        RPvolt                  R_1210_3225Metric                 116.3320   -99.6335  -90.0000  top
+R6        RSvolt                  R_1210_3225Metric                 143.0370   -65.2780    0.0000  top
+R7        RSvolt                  R_1210_3225Metric                 143.0370   -82.6770    0.0000  top
+R8        RSvolt                  R_1210_3225Metric                 143.0370  -100.2030    0.0000  top
+R9        Rcurr                   R_1210_3225Metric                 148.9710  -108.9660  -90.0000  top
+R10       Rcurr                   R_1210_3225Metric                 159.1310  -108.9660  -90.0000  top
+R11       Rcurr                   R_1210_3225Metric                 169.2910  -108.9660  -90.0000  top
+R12       Rcurr                   R_1210_3225Metric                 179.4510  -108.9660  -90.0000  top
+R13       50Ω                    R_1210_3225Metric                 143.0370   -74.1680  180.0000  top
+R14       50Ω                    R_1210_3225Metric                 143.0370   -91.5670  180.0000  top
+R15       50Ω                    R_1210_3225Metric                 143.0370  -109.0930  180.0000  top
+R16       50Ω                    R_1210_3225Metric                 153.4160  -102.9970  180.0000  top
+R17       50Ω                    R_1210_3225Metric                 163.5760  -102.9970  180.0000  top
+R18       50Ω                    R_1210_3225Metric                 173.7360  -102.9970  180.0000  top
+R19       50Ω                    R_1210_3225Metric                 183.8960  -102.9970  180.0000  top
+SW1       SS-12D00G_4mm           PinHeader_1x03_P2.54mm_Vertical   133.4770   -51.4210   90.0000  top
+TP1       ZMPT101B                XFMR_ZMPT101B                     128.4440   -69.7230    0.0000  top
+TP2       ZMPT101B                XFMR_ZMPT101B                     128.4440   -87.1220    0.0000  top
+TP3       ZMPT101B                XFMR_ZMPT101B                     128.4440  -104.5210    0.0000  top
+## End
