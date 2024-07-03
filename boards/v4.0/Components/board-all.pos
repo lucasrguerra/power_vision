@@ -1,4 +1,4 @@
-### Footprint positions - created on Wed Jun 26 21:12:08 2024 ###
+### Footprint positions - created on Mon Jul  1 13:53:33 2024 ###
 ### Printed by KiCad version 7.0.10
 ## Unit = mm, Angle = deg.
 ## Side : All
@@ -60,6 +60,7 @@ R16       50Ω                    R_1210_3225Metric                 145.1616  -1
 R17       50Ω                    R_1210_3225Metric                 155.3216  -100.3046  180.0000  top
 R18       50Ω                    R_1210_3225Metric                 165.4816  -100.3046  180.0000  top
 R19       50Ω                    R_1210_3225Metric                 175.6416  -100.3046  180.0000  top
+R20       50Ω                    R_1210_3225Metric                 146.6088   -61.8236   90.0000  top
 SW1       SS-12D00G_4mm           PinHeader_1x03_P2.54mm_Vertical   125.2226   -48.7286   90.0000  top
 TP1       ZMPT101B                XFMR_ZMPT101B                     120.1896   -67.0306    0.0000  top
 TP2       ZMPT101B                XFMR_ZMPT101B                     120.1896   -84.4296    0.0000  top

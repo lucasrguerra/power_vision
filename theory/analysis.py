@@ -81,7 +81,6 @@ def main():
     apparent_power = voltage_rms * current_rms
     active_power = active_power_integral / number_of_samples
     cosine_phi = active_power / apparent_power
-    theta_angle = 0
 
 
 

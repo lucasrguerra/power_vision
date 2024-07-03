@@ -6,6 +6,7 @@
         "task.h": "c",
         "adc_oneshot.h": "c",
         "adc_cali.h": "c",
-        "adc_cali_scheme.h": "c"
+        "adc_cali_scheme.h": "c",
+        "algorithm": "c"
     }
 }
