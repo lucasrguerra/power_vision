@@ -8,7 +8,7 @@ import math
 # Data parameters
 voltage_amplitude = 311.14
 current_amplitude = 70.71
-system_frequency = 60.01
+system_frequency = 60.2
 quantity_of_samples = 1024
 sample_rate = 256 * 60
 
@@ -20,7 +20,7 @@ voltage_wave = generate_data.add_noise(voltage_wave, 5)
 
 current_wave = generate_data.pure_sine_wave(quantity_of_samples, current_amplitude, system_frequency, 20, sample_rate)
 current_wave = generate_data.add_noise(current_wave, 1)
-current_wave = generate_data.add_harmonic(current_wave, 20, 2 * system_frequency)
+#current_wave = generate_data.add_harmonic(current_wave, 20, 2 * system_frequency)
 #current_wave = generate_data.add_harmonic(current_wave, 25, 3 * system_frequency)
 
 
