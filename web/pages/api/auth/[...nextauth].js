@@ -21,7 +21,7 @@ export default NextAuth({
 				},
 			},
 			async authorize(credentials, request) {
-				const data = await axios.post(`http://localhost:3000/api/user/login`, {
+				const data = await axios.post(`https://powervision.vercel.app/api/user/login`, {
 					email: credentials.email,
 					password: credentials.password,
 				}).then((response) => {
