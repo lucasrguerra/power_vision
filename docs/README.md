@@ -70,8 +70,8 @@ Depois de instalar o PlatformIO, basta clonar este repositório e abrir o projet
 | Tipo de Sistema | Valor da Variável (SYSTEM_TYPE) |
 | --- | --- |
 | Monofásico (P+N) | 0 |
-| Bifásico (2P) | 0 |
-| Bifásico (2P+N) | 1 |
+| Bifásico (2P)    | 0 |
+| Bifásico (2P+N)  | 1 |
 | Trifásico (3P+N) | 2 |
 
 _**Nota:** Lembre-se de mudar o valor da variável `SYSTEM_TYPE` no código do projeto para o valor correspondente na tabela acima_
@@ -80,28 +80,30 @@ _**Nota:** Lembre-se de mudar o valor da variável `SYSTEM_TYPE` no código do p
 
 #### Resistores para a corrente (Rcurr)
 
-| Corrente Máxima (A) | Resistência (Ω) | Valor da Variável (CURRENT_TYPE) |
-| --- | --- | --- |
-| 1000 | 3 | 0 |
-| 750 | 3.9 | 1 |
-| 500 | 5.6 | 2 |
-| 300 | 10 | 3 |
-| 200 | 15 | 4 |
-| 120 | 24 | 5 |
-| 80 | 36 | 6 |
+| Corrente Máxima (A) | Relação do Sensor | Resistência (Ω) | Valor da Variável (CURRENT_TYPE) |
+| --- | --- | --- | --- |
+| 1000 | 3000:1 | 2   | 0 |
+| 750  | 3000:1 | 2.7 | 1 |
+| 500  | 3000:1 | 4.3 | 2 |
+| 300  | 3000:1 | 6.8 | 3 |
+| 200  | 3000:1 | 10  | 4 |
+| 120  | 3000:1 | 28  | 5 |
+| 80   | 3000:1 | 27  | 6 |
+| 100  | 2000:1 | 12  | 7 |
+| 20   | 2000:1 | 68  | 8 |
 
 _**Nota:** Lembre-se de mudar o valor da variável `CURRENT_TYPE` no código do projeto para o valor correspondente na tabela acima_
 
 
 
-#### Resistores para a tensão (RPvolt e RSvolt)
+#### Resistores para a tensão (RPvolt)
 
-| Tensão de Operação (Vac) | Resistência do Primário (Ω) | Resistência do Secundário (Ω) | Valor da Variável (VOLTAGE_TYPE) |
-| --- | --- | --- | --- |
-| 440 | 300k | 620 | 0 |
-| 380 | 270k | 620 | 1 |
-| 220 | 180k | 620 | 2 |
-| 127 | 120k | 680 | 3 |
+| Tensão de Operação (Vac) | Resistência do Primário (Ω) | Valor da Variável (VOLTAGE_TYPE) |
+| --- | --- | --- |
+| 440 | 510k | 0 |
+| 380 | 470k | 1 |
+| 220 | 300k | 2 |
+| 127 | 180k | 3 |
 
 _**Nota:** Lembre-se de mudar o valor da variável `VOLTAGE_TYPE` no código do projeto para o valor correspondente na tabela acima_
 

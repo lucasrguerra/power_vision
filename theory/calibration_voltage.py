@@ -1,6 +1,5 @@
 from scipy.stats import linregress
 import generate_data
-import numpy as np
 
 
 
@@ -12,10 +11,10 @@ quantity_of_samples = 1000
 sample_rate = 2160
 
 voltage_levels = [
-    [440, 270000, 430],
-    [380, 270000, 470],
-    [220, 150000, 390],
-    [127, 100000, 430]
+    [440, 510000, 430],
+    [380, 470000, 430],
+    [220, 300000, 430],
+    [127, 180000, 430]
 ]
 
 

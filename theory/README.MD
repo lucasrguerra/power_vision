@@ -10,17 +10,18 @@ Bem-vindo à documentação da teoria por trás do Power Vision. Este documento 
 
 Para calcular a corrente do sistema, é necessário utilizar resistores de baixa resistência, e essa resistência é calculada levando em consideração a tensão máxima que pode ser medida pelo microcontrolador com uma margem de erro. Para simplificar os cálculos, o Jupyter Notebook [calculate_limits_of_current.ipynb](./calculate_limits_of_current.ipynb) foi criado para calcular os parâmetros de acordo com os resistores utilizados.
 
-_**Nota:** Os valores de resistência foram calculados considerando um transformador de corrente com uma relação de 3000:1._
+| Corrente Máxima do Sistema | Relação do Sensor | Corrente no Secundário | Tensão Pico a Pico no Secundário | Resistência (±1%) | Relação da Transformação |
+| --- | --- | --- | --- | --- | --- |
+| 1000A | 3000:1 | 0.33333A | 2.3094V  | 2Ω   | 1500    |
+| 750A  | 3000:1 | 0.25A    | 2.33827V | 2.7Ω | 1111.11 |
+| 500A  | 3000:1 | 0.16667A | 2.48261V | 4.3Ω | 697.674 |
+| 300A  | 3000:1 | 0.1A     | 2.35559V | 6.8Ω | 441.176 |
+| 200A  | 3000:1 | 0.06667A | 2.3094V  | 10Ω  | 300     |
+| 120A  | 3000:1 | 0.04A    | 2.49415V | 18Ω  | 166.667 |
+| 80A   | 3000:1 | 0.02667A | 2.49415V | 27Ω  | 111.111 |
+| 100A  | 2000:1 | 0.05A    | 2.07846V | 12Ω  | 166.667 |
+| 20A   | 2000:1 | 0.01A    | 2.35559V | 68Ω  | 29.4118 |
 
-| Corrente Máxima do Sistema | Corrente no Secundário | Tensão Pico a Pico no Secundário | Resistência (±1%) | Relação da Transformação |
-| --- | --- | --- | --- | --- |
-| 1000A | 0.33333A | 2.54034V | 2.2Ω | 1363.64 |
-| 750A  | 0.25000A | 2.59808V | 3Ω   | 1000    |
-| 500A  | 0.16667A | 2.25167V | 3.9Ω | 769.231 |
-| 300A  | 0.10000A | 2.35559V | 6.8Ω | 441.176 |
-| 200A  | 0.06667A | 2.30940V | 10Ω  | 300     |
-| 120A  | 0.04000A | 2.49415V | 18Ω  | 166.667 |
-| 80A   | 0.02667A | 2.49415V | 27Ω  | 111.111 |
 
 
 
@@ -30,14 +31,14 @@ Para calcular a tensão do sistema, é necessário utilizar resistores de baixa 
 
 _**Nota:** Os valores de resistência foram calculados considerando o transformador de corrente ZMPT101B com uma relação de transformação de 2mA:2mA._
 
-#### Resistores para o Primário (RPvolt) e Secundário (RSvolt) do Transformador
+#### Resistores para o Primário (RPvolt) do Transformador de Tensão
 
-| Tensão do Sistema | Tensão Máxima do Sistema | Corrente no Transformador | Resistência RPvolt (±1%) | Tensão Pico a Pico no Secundário | Resistência RSvolt (±1%) | Relação da Transformação |
+| Tensão do Sistema | Tensão Máxima do Sistema | Corrente no Transformador | Resistência RPvolt (±1%) | Tensão Pico a Pico no Secundário | Relação da Transformação |
 | --- | --- | --- | --- | --- | --- | --- |
-| 440Vac | 475Vac | 0.00176A | 270kΩ | 2.62053V | 430Ω | 627.907 |
-| 380Vac | 440Vac | 0.00163A | 270kΩ | 2.65325V | 470Ω | 574.468 |
-| 220Vac | 275Vac | 0.00183A | 150kΩ | 2.47683V | 390Ω | 384.615 |
-| 127Vac | 175Vac | 0.00175A | 100kΩ | 2.60674V | 430Ω | 232.558 |
+| 440Vac | 475Vac | 0.00161A | 510kΩ | 2.40294V | 1186.05 |
+| 380Vac | 440Vac | 0.00162A | 470kΩ | 2.41532V | 1093.02 |
+| 220Vac | 275Vac | 0.00159A | 300kΩ | 2.365V   | 697.674 |
+| 127Vac | 175Vac | 0.00168A | 180kΩ | 2.50833V | 418.605 |
 
 
 
