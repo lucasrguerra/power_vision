@@ -10,6 +10,8 @@ system_frequency = 60
 quantity_of_samples = 1000
 sample_rate = 2160
 
+
+
 voltage_levels = [
     [440, 510000, 430],
     [380, 470000, 430],
@@ -38,6 +40,6 @@ for level in voltage_levels:
         adc_values.append(int(output * 1000))
 
     slope, intercept, r_value, p_value, std_err = linregress(adc_values, voltage_input)
-    equation = equation = f"y = {slope:.3f}x + {intercept:.3f}"
+    equation = equation = f"y = {slope:.5f}x + {intercept:.5f}"
     print(f"Calibration equation for {level[0]}Vac: {equation}")
 print("\n")
