@@ -52,7 +52,9 @@
         "streambuf": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "esp_wifi.h": "c"
+        "esp_wifi.h": "c",
+        "gpio.h": "c",
+        "esp_timer.h": "c"
     },
-    "cmake.sourceDirectory": "/orangepipc/War_Cloud/Projetos/power_vision"
+    "cmake.sourceDirectory": "D:/Projetos/power_vision"
 }
